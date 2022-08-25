@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 Blablablablablablablabla soy el segundo archivio
+
+
+=======
+fhirugherfnelvnerkbk
+>>>>>>> KarlosBranch
