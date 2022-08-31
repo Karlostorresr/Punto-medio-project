@@ -1,15 +1,22 @@
 
 body{
-    background-color: #f1dfd1;
+    background-color: #fbf7f3;
 }
 
 .container{
     min-width: 800px;
 }
 
-.brandImage{
+.brandImageSection{
     background-color: bisque;
     height:100px;
+}
+
+.brandImagePicture{
+    width: 100%;
+    height: 120px;
+    object-fit: fill;
+
 }
 
 .userProfile{
@@ -20,7 +27,20 @@ body{
     background-color: aqua;
     height: 300px;
     width:35%;
-    min-width: 250px;  
+    min-width: 250px; 
+    
+    text-align: center; 
+}
+
+.userImage{
+    width: fit-content;
+    border: 1px black;
+    max-block-size: 210px;
+}
+
+.starSection{
+    border: 1px black;
+    
 }
 
 .brandDescription{
@@ -33,10 +53,15 @@ body{
 .text{
     height: 280px;
     word-wrap:break-word;
-    overflow: hidden; 
-    
+    overflow: auto; 
 }
 
+.newPostSection{
+    height: 4vh;
+    background-color: #fbf7f3;
+    text-align: center;
+    padding:1vh;
+}
 .productsPosted{
     background-color: cadetblue;
     height: 65vh;
