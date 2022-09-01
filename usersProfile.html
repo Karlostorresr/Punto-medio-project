@@ -12,51 +12,30 @@
 
 </head>
 
-<body>
+<body class="body">
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar sticky-top" style="background-color:#304a65;">
+        <!-- Container wrapper -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">
+                <img src="/Multimedia/LogoLight.png" alt="" width="200" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
             </div>
         </div>
     </nav>
-
 
     <div class="container">
 
@@ -69,10 +48,10 @@
         <div class="userProfile">
             <div class="entrepreneurDescription">
                 <div>
-                    <img class="userImage" src="/Multimedia/lheicas.jpeg">
+                    <img class="userImage border" src="/Multimedia/lheicas.jpeg">
                 </div>
                 <div class="userName">
-                    <span class="text userName" >User Name </span>
+                    <span class="text userName">User Name </span>
                 </div>
                 <div class="userStars">
                     <section class="starsSection">
@@ -89,15 +68,11 @@
 
 
             <div class="brandDescription">
-                <div class="text">
+                <div class="brandTextDescription border">
 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur quae veniam explicabo iure
                     amet rerum ut repudiandae beatae quam dicta eos suscipit, deleniti quibusdam! Omnis consequuntur
                     obcaecati qui consequatur!
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores explicabo pariatur rerum
-                    vitae cupiditate amet nesciunt, omnis dolore aliquid quaerat aspernatur suscipit repudiandae
-                    voluptatem, dolorem, sed repellat voluptatibus corrupti.
                     <br><br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores explicabo pariatur rerum
                     vitae cupiditate amet nesciunt, omnis dolore aliquid quaerat aspernatur suscipit repudiandae
@@ -113,48 +88,156 @@
 
             </div>
 
-
         </div>
 
         <div class="newPostSection">
             <div class="newPost">
-                <button>New post</button>
+                <button class="border">New post</button>
             </div>
         </div>
 
         <div class="productsPosted">
+
             <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
+                <div class="imageNreactions border">
+                    <div>
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+                    <div class="publicationReactions halfBorder">
+                        <section>
+                            <span>
+                                <button>Like</button>
+                                <button>Dislike</button>
+                                <button>Comment</button>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
             </div>
 
             <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
+                <div class="imageNreactions border">
+                    <div>
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+                    <div class="publicationReactions halfBorder">
+                        <section>
+                            <span>
+                                <button>Like</button>
+                                <button>Dislike</button>
+                                <button>Comment</button>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
             </div>
 
             <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
+                <div class="imageNreactions border">
+                    <div>
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+                    <div class="publicationReactions halfBorder">
+                        <section>
+                            <span>
+                                <button>Like</button>
+                                <button>Dislike</button>
+                                <button>Comment</button>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
             </div>
 
             <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
+                <div class="imageNreactions border">
+                    <div>
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+                    <div class="publicationReactions halfBorder">
+                        <section>
+                            <span>
+                                <button>Like</button>
+                                <button>Dislike</button>
+                                <button>Comment</button>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
+            </div>
+
+            <div class="soloProduct">
+                <div class="imageNreactions border">
+                    <div>
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+                    <div class="publicationReactions halfBorder">
+                        <section>
+                            <span>
+                                <button>Like</button>
+                                <button>Dislike</button>
+                                <button>Comment</button>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
+            </div>
+
+            <div class="soloProduct">
+                <div class="imageNreactions border">
+                    <div>
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+                    <div class="publicationReactions halfBorder">
+                        <section>
+                            <span>
+                                <button>Like</button>
+                                <button>Dislike</button>
+                                <button>Comment</button>
+                            </span>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
             </div>
 
 
         </div>
-
-
     </div>
 </body>
 
