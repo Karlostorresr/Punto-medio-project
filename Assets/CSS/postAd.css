@@ -1,0 +1,21 @@
+body {
+    background-color: #FBF7F3;
+    padding: 3rem;
+    font-family: 'Quicksand';
+}
+
+h1 {
+    font-family: 'Comfortaa';
+    color: #A56072;
+    text-align: center;
+}
+
+.form-control, .form-select {
+    background-color: #D7D6D8;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #A56072;
+    border-radius: 20px;
+}
