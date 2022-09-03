@@ -9,7 +9,7 @@
     margin-bottom:8vh; 
 }
 .container{
-    min-width: 75%;
+    min-width: auto;
 }
 .brandImageSection{
     background-color: bisque;
@@ -81,6 +81,7 @@
     font-size: 3vh;
     width: 15%;
     min-width: 8rem;
+    max-height: 4rem;
 }
 
 .productsPosted{
@@ -90,13 +91,15 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     flex-wrap: wrap;
-    
+    height: auto;
+    width: auto;
+    min-width: 70%;
 }
 
 .soloProduct{
-    margin: 10PX;
-    max-height: 70%;
-    min-width: 150px;
+    margin: 10px;
+    height: auto;
+    width: auto;
     padding:1rem;
 }
 
@@ -166,3 +169,11 @@
     border-radius: 20px;
 }
 
+@media screen and (max-width:420px) {
+    .productDescription{
+        display:none;
+    }
+    .soloProduct {
+        height: calc();
+    }
+}
