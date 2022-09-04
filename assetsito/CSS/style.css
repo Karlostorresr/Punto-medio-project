@@ -1,0 +1,175 @@
+
+body {
+    background-color: #fbf7f3;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-fluid{
+    background-color: #304a65;
+
+}
+
+.NavButton0 {
+    width: 118.1px;
+    height: 39.6px;
+    flex-grow: 0;
+    margin: 6px 19.9px 0.4px 333px;
+    padding: 0 9px 0 9px;
+    border-radius: 12px;
+    background-color: #3a5572;
+  }
+.Categorias {
+    width: 100.1px;
+    height: 39.6px;
+    flex-grow: 0;
+    font-family: Quicksand;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+.NavButton1 {
+    width: 118.1px;
+    height: 39.6px;
+    flex-grow: 0;
+    margin: 6px 19.9px 0.4px;
+    padding: 0 9px 0 9px;
+    border-radius: 12px;
+    background-color: #3a5572;
+  }
+  .Tips {
+    width: 100.1px;
+    height: 39.6px;
+    flex-grow: 0;
+    font-family: Quicksand;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #FBF7F3;
+  }
+  
+  .NavButton2 {
+    width: 118.1px;
+    height: 39.6px;
+    flex-grow: 0;
+    margin: 6px 6.9px 0.4px 19.9px;
+    padding: 0 9px 0 9px;
+    border-radius: 12px;
+    background-color: #3a5572;
+  }
+  
+  .Publica {
+    width: 100.1px;
+    height: 39.6px;
+    flex-grow: 0;
+    font-family: Quicksand;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #FBF7F3;
+  }
+
+  .carousel-inner{
+    background-color: #97a9c1;
+    padding: 10px 5rem 0 5rem;
+    max-height: 400px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 16px;
+
+}
+
+
+
+
+.Rectangle-12 {
+    width: 1440px;
+    height: 48px;
+    margin: 16px 0 44px;
+    background-color: #ebd8cd;
+  }
+.container-fluid2{
+    background-color: #EBD8CD;
+    flex: content;
+
+}
+
+
+.navbar-brand{
+    
+    position: absolute;
+    width: 373px;
+    height: 32px;
+    left: 372px;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 36px;
+    line-height: 90%;
+    vertical-align: top;
+
+}
+
+.vestido{
+    align-items: center;
+}
+.navbar-brand2{
+    
+    position: absolute;
+    width: 180px;
+    height: 63px;
+    left: 819px;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 36px;
+    line-height: 90%;
+    vertical-align: top;
+    
+}
+
+.navbar-brand3{
+    
+    position: absolute;
+    width: 373px;
+    height: 32px;
+    left: 1049px;
+    font-family: 'Comfortaa', cursive;
+    align-items: center;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 36px;
+    line-height: 90%;
+    vertical-align: top;
+    
+}
+
+.gustosText{
+    color: #a56072;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+#macetasJardin{
+    width: 800px;
+    text-align: right;
+
+}
