@@ -6,87 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand:wght@600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="/usersProfile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
-<body>
+<body class="body">
 
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" style="background-color: #304A65;">
+              <a class="navbar-brand" href="#"><img src="/Multimedia/LogoLight.png" style="max-height: 7vh;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white;">Publica</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                      Categorías
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Enseres</a></li>
+                      <li><a class="dropdown-item" href="#">Edibles</a></li>
+                      <li><a class="dropdown-item" href="#">Orgánicos</a></li>
+                      <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">OwO</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true" style="color: white;">Proximamente!</a>
+                  </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control me-2" type="search" placeholder="Encuentra" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Búsqueda</button>
                 </form>
+              </div>
             </div>
-        </div>
-    </nav>
-
+          </nav>
+    </div>
 
     <div class="container">
 
-        <div class="brandImage">
-            <div class="brandImagePicture">
-                <img>
+        <div class="brandImageSection">
+            <div>
+                <img class="brandImagePicture" src="/Multimedia/portada Magnolia.png">
             </div>
-
         </div>
 
         <div class="userProfile">
             <div class="entrepreneurDescription">
-                <div class="userImage"></div>
-                <div class="userName"></div>
-                <div class="userStars"></div>
-                <div class="newPost"></div>
+                <div class="userImageContainer">
+                    <img class="userImage border" src="/Multimedia/lheicas.jpeg">
+                </div>
+                <div class="user fontTextTitle">
+                    <span class="userName">User Name </span>
+                </div>
+                <div class="starsSection">
+                    <div class="star">
+                        <button><img class="starImage" src="/Multimedia/star2.png"></button>
+                    </div>
+                    <div class="star">
+                        <button><img class="starImage" src="/Multimedia/star2.png"></button>
+                    </div>
+                    <div class="star">
+                        <button><img class="starImage" src="/Multimedia/star2.png"></button>
+                    </div>
+                    <div class="star">
+                        <button><img class="starImage" src="/Multimedia/star2.png"></button>
+                    </div>
+                    <div class="star">
+                        <button><img class="starImage" src="/Multimedia/star2.png"></button>
+                    </div>
 
+                </div>
             </div>
 
 
             <div class="brandDescription">
-                <div class="text">
+                <div class="brandTextDescription fontText border">
 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex pariatur quae veniam explicabo iure
                     amet rerum ut repudiandae beatae quam dicta eos suscipit, deleniti quibusdam! Omnis consequuntur
                     obcaecati qui consequatur!
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores explicabo pariatur rerum
-                    vitae cupiditate amet nesciunt, omnis dolore aliquid quaerat aspernatur suscipit repudiandae
-                    voluptatem, dolorem, sed repellat voluptatibus corrupti.
                     <br><br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores explicabo pariatur rerum
                     vitae cupiditate amet nesciunt, omnis dolore aliquid quaerat aspernatur suscipit repudiandae
@@ -102,42 +119,131 @@
 
             </div>
 
+        </div>
 
+        <div class="newPostSection">
+            <div>
+                <button class="border newPostButton fontTextTitle">New post</button>
+            </div>
         </div>
 
         <div class="productsPosted">
-            <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
-            </div>
 
             <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
-            </div>
+                <div class="imageNreactions border">
+                    <div class="imageContainer">
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
 
-            <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
-            </div>
+                    <div class="reactionsContainer">
+                        <div class="reactionButton">
+                            <button> <img class="reactionLogo" id="like" src="Multimedia/heart.png">
+                            </button>
+                        </div>
 
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo " id="dislike" src="/Multimedia/dislike.png"></button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo" id="comment" src="/Multimedia/comment.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="fontText">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
+            </div>
             <div class="soloProduct">
-                <div class="productImage"></div>
-                <div class="publicationReactions"></div>
-                <div class="productDescription"></div>
-                <div class="comments"></div>
+                <div class="imageNreactions border">
+                    <div class="imageContainer">
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+
+                    <div class="reactionsContainer">
+                        <div class="reactionButton">
+                            <button> <img class="reactionLogo" id="like" src="Multimedia/heart.png">
+                            </button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo " id="dislike" src="/Multimedia/dislike.png"></button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo" id="comment" src="/Multimedia/comment.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
+            </div>
+            <div class="soloProduct">
+                <div class="imageNreactions border">
+                    <div class="imageContainer">
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+
+                    <div class="reactionsContainer">
+                        <div class="reactionButton">
+                            <button> <img class="reactionLogo" id="like" src="Multimedia/heart.png">
+                            </button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo " id="dislike" src="/Multimedia/dislike.png"></button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo" id="comment" src="/Multimedia/comment.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
+            </div>
+            <div class="soloProduct">
+                <div class="imageNreactions border">
+                    <div class="imageContainer">
+                        <img class="productImage border" src="/Multimedia/Sombrero charro.png">
+                    </div>
+
+                    <div class="reactionsContainer">
+                        <div class="reactionButton">
+                            <button> <img class="reactionLogo" id="like" src="Multimedia/heart.png">
+                            </button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo " id="dislike" src="/Multimedia/dislike.png"></button>
+                        </div>
+
+                        <div class="reactionButton">
+                            <button><img class="reactionLogo" id="comment" src="/Multimedia/comment.png"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productDescription border">
+                    <div class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
+                    </div>
+                </div>
             </div>
 
 
         </div>
-
-
     </div>
 </body>
 
