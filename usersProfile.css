@@ -6,42 +6,61 @@
     background-color: #fbf7f3;
 }
 .navbar{
-    margin-bottom:8vh; 
+    margin-bottom:2vh; 
 }
-.container{
-    min-width: auto;
-}
+
 .brandImageSection{
     background-color: bisque;
-    height:120px;
+    height:15vh;
 }
 .brandImagePicture{
     width: 100%;
-    height: 120px;
+    height: 15vh;
     object-fit: fill;
 }
 .userProfile{
     display: flex;
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+    
 }
 .entrepreneurDescription{
+    height:inherit;
     background-color: #fbf7f3;
-    height: 300px;
     width:30%;
-    min-width: 250px;
-    padding: 25px; 
     text-align: center; 
+    padding:2vh; 
+    
 }
 
+.userImageContainer{
+    height: auto;
+    width: 100%;
+    max-height: 35vh;
+}
 .userImage{
-    width: fit-content;
+    max-width:100%;
+    max-height:inherit;
+    object-fit: contain;
     border: 1px black;
-    max-block-size: 210px;
+}
+.user{
+    max-height:12.5%;
+
+}
+
+.starSection{
+    display:flex;
+    max-height: 5%;
 }
 
 .star{
-    border:none;
+    display: inline;
+    width: 20%;
 }
-.star:hover{
+
+.starImage:hover{
     background-color: yellow;
 }
 .starImage{
@@ -49,16 +68,20 @@
     width: 1rem;
 }
 
+.star button {
+    border:none;
+    background-color:#fbf7f3;
+}
+
 .brandDescription{
+    height: inherit;
     background-color: #fbf7f3;
-    height: 300px;
     width:70%;
-    min-width: 500px;
-    padding:25px; 
+    padding:2vh;
+     
 }
 
 .brandTextDescription{
-    height: 240px;
     word-wrap:break-word;
     overflow: auto;
     /*border: 5px black solid;*/
@@ -66,38 +89,32 @@
     background-color: #c0c9d7;
     text-align: center;
     justify-content: center;
+    max-height: 35vh;
 }
 
 .newPostSection{
-    height: 4vh;
-    min-height: 45px;
+    height: 6vh;
+    min-height: 4vh;
     background-color: #fbf7f3;
     text-align: center;
-    padding:1vh;
+    margin:2vh;
 }
 
 .newPostButton{
     background-color: #a56072;
-    font-size: 3vh;
     width: 15%;
-    min-width: 8rem;
-    max-height: 4rem;
 }
 
 .productsPosted{
     background-color: #fbf7f3;
-    height: 65vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px;
     flex-wrap: wrap;
     height: auto;
     width: auto;
-    min-width: 70%;
 }
 
 .soloProduct{
-    margin: 10px;
     height: auto;
     width: auto;
     padding:1rem;
@@ -105,14 +122,12 @@
 
 .imageNreactions{
     background-color:#f1dfd1;
-    padding-top: 1rem;
-    min-width: 10rem;
-    
 }
 .imageContainer{
-    max-width:80%;
-    max-height: 80%;
+    max-width: 95%;
+    max-height: 95%;
     margin:auto;
+    padding: 1vh;
 }
 
 .productImage{
@@ -120,29 +135,37 @@
     object-fit: fill;
     display: block;
     margin: auto; 
-    max-width:90%;
+    max-width:100%;
     height: auto;
-      
 }   
 
 
 .reactionsContainer{
-   margin-top:1rem;
-   display:block;
+   display:flex;
    text-align: center;
    background-color:#a56072;
    border-radius: 0% 0% 20px 20px;
+   max-height:20% ;
 }
 
 .reactionButton{
     background-color: #a56072;
     border:none;
-    margin:10px;
+    margin: 2vh 0;
+    width: 32%;
+    
+}
+
+.reactionButton button{
+    background-color: #a56072;
+    border: none;
+    padding: 0;
+    margin: 0%;
 }
 
 .reactionLogo{
     height: 2vh;
-    width: 2vh;
+    width:2vw;
 }
 
 #like:hover{
@@ -169,11 +192,75 @@
     border-radius: 20px;
 }
 
+.fontText{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fontTextTitle{
+    font-family: 'Comfortaa', cursive;
+
+}
+
 @media screen and (max-width:420px) {
     .productDescription{
         display:none;
     }
     .soloProduct {
-        height: calc();
+        margin:0;
+        padding:0;
+        border-radius: 0;
     }
+    .imageNreactions{
+        padding:0;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .imageContainer{
+        padding:0;
+        margin: 0;
+        border-radius: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .productImage{       
+        border-radius: 0;
+    }
+
+    .reactionsContainer{
+        padding:0;
+        margin: 0;
+        border-radius: 0;
+        max-height: 7vh;
+    }
+
+    .brandImageSection{
+        max-height: 10vh;
+    }
+    .userProfile{
+        max-height: 25vh; 
+        padding: 0;
+    }
+
+    .brandTextDescription{
+        height: 24vh;
+    }
+
+    .reactionButton{
+        margin:0;
+    }
+
+
+    .reactionButton button{
+        height: 4vh;
+        width: 4vw;
+    }
+
+    
+    
+
+
+
+
 }
