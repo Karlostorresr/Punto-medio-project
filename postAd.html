@@ -11,18 +11,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="/Assets/CSS/postAd.css"
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
+    <link rel="stylesheet" href="/Assets/CSS/postAd.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
       rel="stylesheet"
-      s
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,74 +27,171 @@
   </head>
 
   <body>
-    <h1>Publica tus Productos</h1>
-    <form class="row g-3">
-      <!--Business name input-->
-      <div class="col-6">
-        <label for="inputAddress" class="form-label">Empresa</label>
-        <input type="text" class="form-control" id="inputBusiness" />
-      </div>
-      <!--Category input-->
-      <div class="col-6">
-        <label for="inputState" class="form-label">Categoría</label>
-        <select id="inputState" class="form-select">
-          <option selected>Seleccionar...</option>
-          <option>Casa y Jarín</option>
-          <option>Entretenimiento</option>
-          <option>Ropa y Accesorios</option>
-          <option>Electrónica</option>
-        </select>
-      </div>
-      <!--Business description input-->
-      <div class="col-12">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Descripción</label
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar sticky-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./Assets/Multimedia/LogoLight.png"
+              alt=""
+              width="100"
+              height="25"
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Categorías</a
+            >
+            <a class="nav-link" href="#">Publica</a>
+            <a class="nav-link" href="#">Tips de Venta</a>
+          </div>
+        </div>
       </div>
-      <!--Upload pictures input-->
-      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-        <label for="formFile" class="form-label">Fotos</label>
-        <input class="form-control" type="file" id="formFile" />
-        <label for="inputProductName" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputProductName" />
-        <label for="inputProductPrice" class="form-label">Costo</label>
-        <input type="text" class="form-control" id="inputProductPrice" />
-        <input class="form-control" type="file" id="formFile" />
-        <label for="inputProductName" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputProductName" />
-        <label for="inputProductPrice" class="form-label">Costo</label>
-        <input type="text" class="form-control" id="inputProductPrice" />
-        <input class="form-control" type="file" id="formFile" />
-        <label for="inputProductName" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputProductName" />
-        <label for="inputProductPrice" class="form-label">Costo</label>
-        <input type="text" class="form-control" id="inputProductPrice" />
-        <input class="form-control" type="file" id="formFile" />
-        <label for="inputProductName" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputProductName" />
-        <label for="inputProductPrice" class="form-label">Costo</label>
-        <input type="text" class="form-control" id="inputProductPrice" />
-        <input class="form-control" type="file" id="formFile" />
-        <label for="inputProductName" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputProductName" />
-        <label for="inputProductPrice" class="form-label">Costo</label>
-        <input type="text" class="form-control" id="inputProductPrice" />
-      </div>
-      <!--Submit button-->
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Publicar</button>
-      </div>
-    </form>
+    </nav>
+    <!-- Navbar -->
+    <div class="principal container-fluid px-md-5 pt-4">
+      <h1 class="mb-4">Publica tus Productos</h1>
+      <form>
+        <div class="row mb-4 gy-4">
+          <div class="col-12 col-sm-6">
+            <!--Business name input-->
+            <label for="inputAddress" class="form-label">Empresa</label>
+            <input type="text" class="form-control" id="inputBusiness" />
+          </div>
+          <div class="col-12 col-sm-6">
+            <!--Category input-->
+            <label for="inputState" class="form-label">Categoría</label>
+            <select id="inputState" class="form-select">
+              <option selected>Seleccionar...</option>
+              <option>Casa y Jarín</option>
+              <option>Entretenimiento</option>
+              <option>Ropa y Accesorios</option>
+              <option>Electrónica</option>
+            </select>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <!--Business description input-->
+          <div class="col">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Descripción</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <!--Upload pictures input-->
+          <label for="formFile" class="form-label">Fotos</label>
+        </div>
+        <div class="row gy-4 mb-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <input class="form-control mb-2 img-input" type="file" />
+            <div id="img-preview-1" class="img-preview"></div>
+            <label for="inputProductName" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inputProductName"
+            />
+            <label for="inputProductPrice" class="form-label">Costo</label>
+            <input type="text" class="form-control" id="inputProductPrice" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <input class="form-control mb-2 img-input" type="file" />
+            <div id="img-preview-2" class="img-preview"></div>
+            <label for="inputProductName" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inputProductName"
+            />
+            <label for="inputProductPrice" class="form-label">Costo</label>
+            <input type="text" class="form-control" id="inputProductPrice" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <input class="form-control mb-2 img-input" type="file" />
+            <div id="img-preview-3" class="img-preview"></div>
+            <label for="inputProductName" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inputProductName"
+            />
+            <label for="inputProductPrice" class="form-label">Costo</label>
+            <input type="text" class="form-control" id="inputProductPrice" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <input class="form-control mb-2 img-input" type="file" />
+            <div id="img-preview-4" class="img-preview"></div>
+            <label for="inputProductName" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="inputProductName"
+            />
+            <label for="inputProductPrice" class="form-label">Costo</label>
+            <input type="text" class="form-control" id="inputProductPrice" />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <!--Submit button-->
+          <button type="submit" class="btn btn-primary">Publicar</button>
+        </div>
+      </form>
+    </div>
     <!--Script import-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      const imgInputs = document.querySelectorAll(".img-input");
+
+      imgInputs.forEach((input, i) => {
+        const preview = document.getElementById(`img-preview-${i + 1}`);
+
+        input.onchange = (e) => {
+          const [file] = input.files;
+          if (file) {
+            // Encode the file using the FileReader API
+            const reader = new FileReader();
+            reader.onloadend = () => {
+              // Use a regex to remove data url part
+              const base64String = reader.result
+                .replace("blob:", "")
+                .replace(/^.+,/, "");
+
+              preview.style.backgroundImage = `url("data:image/png;base64,${base64String}")`;
+            };
+            reader.readAsDataURL(file);
+          }
+        };
+      });
+    </script>
   </body>
 </html>

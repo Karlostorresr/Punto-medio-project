@@ -1,21 +1,50 @@
 body {
-    background-color: #FBF7F3;
-    padding: 3rem;
-    font-family: 'Quicksand';
+  background-color: #fbf7f3;
+  font-family: "Quicksand";
+}
+
+nav {
+  background-color: #304a65;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fbf7f3;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fbf7f3;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fbf7f3;
+  opacity: 0.75;
 }
 
 h1 {
-    font-family: 'Comfortaa';
-    color: #A56072;
-    text-align: center;
+  font-family: "Comfortaa";
+  color: #a56072;
+  text-align: center;
 }
 
-.form-control, .form-select {
-    background-color: #D7D6D8;
-    border-radius: 20px;
+.form-control,
+.form-select {
+  background-color: #d7d6d8;
+  border-radius: 20px;
 }
 
 .btn-primary {
-    background-color: #A56072;
-    border-radius: 20px;
+  background-color: #a56072;
+  border-radius: 20px;
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.img-preview {
+  width: 150px;
+  height: 150px;
+  background-color: #d7d6db;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 12px auto;
 }
