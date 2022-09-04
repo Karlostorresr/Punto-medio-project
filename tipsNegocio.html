@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links Quicksand font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Links Comfortaa font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap" rel="stylesheet">
+
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="Assets/css/tipsNegocio.css">
+  <script src="./Assets/js/tipsNegocio.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light">
+      <div class="container-fluid" style="background-color: #304A65;">
+        <a class="navbar-brand" href="#"><img src="/Assets/img/LogoLight.png" style="max-height: 6vh;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Publica</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color: white;">
+                Categorías
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Enseres</a></li>
+                <li><a class="dropdown-item" href="#">Edibles</a></li>
+                <li><a class="dropdown-item" href="#">Orgánicos</a></li>
+                <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">OwO</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
+                style="color: white;">Proximamente!</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Encuentra" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Búsqueda</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar -->
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- Title -->
+  <div>
+    <h1 id="pageTitle">Tips de venta</h1>
+  </div>
+  <!-- Title -->
+
+  <!-- Comment -->
+  <div id="wrapper">
+    <!-- Comment form -->
+    <div id="commentBody">
+      <h3 id="sectionTitle">¿Tienes un tip que compartir?</h3>
+      <div id="commentWriteArea">
+        <label for="commentDisplayInput" class="commentLabel">¡Queremos escucharte!</label>
+        <textarea id="commentDisplayInput" rows="6" class="commentInput"></textarea>
+        <div id="commentFooter">
+          <button id="sendComment">Enviar</button>
+        </div>
+      </div>
+    </div>
+    <!-- Comment form -->
+    <div id="commentBodyTitle">
+      <h3>Comentarios</h3>
+    </div>
+    <!-- Comment body -->
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" class="img-fluid" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="vote">
+        <input type="image" src="./Assets/img/HeartReaction.png" id="voteInput" height="15" width="15" name="upVote"
+          alt="text" />
+        <span>0</span>
+      </div>
+    </div>
+    <!-- Comment body -->
+  </div>
+  <!-- Comment -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
