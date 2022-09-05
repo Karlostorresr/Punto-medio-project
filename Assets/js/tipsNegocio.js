@@ -6,56 +6,63 @@ document.getElementById("commentBodyTitle").style.fontWeight = "bold";
 const commentInputs = {
     submit: document.getElementById("sendComment"),
     comment: document.getElementById("commentDisplayInput"),
+    upvote: document.getElementsByClassName("voteInput")
 };
 
 let canSubmit = false;
 
+//Submit comment after validating
 function commentSubmit() {
-    if(canSubmit) {
+    if (canSubmit) {
         let comments = {
-            comment: commentInputs.comment.value.trim(),
+            comment: commentInputs.comment.value.trim()
         };
         console.log(comments);
-        diableSubmit();
+        disableSubmit();
     }
 }
 
 //Check text validation 
 function enableButton() {
     let comment = commentInputs.comment.value.trim();
-    if(comment.length > 4){ //If the comment length is longer than 4 characters 
+    if (comment.length > 4) { //If the comment length is longer than 4 characters 
         commentInputs.submit.classList.add("commentInputEnabled");//Creates the class commentInputEnabled
         commentInputs.submit.disabled = false;//Then enables the submit button
         canSubmit = true;
-    } else{
-        diableSubmit();
+    } else {
+        disableSubmit();
     }
 }
 
-function diableSubmit() {
+//Function to disable submit button
+function disableSubmit() {
     commentInputs.submit.classList.remove("commentInputEnabled");//Remove the class commentInputEnabled
-        commentInputs.submit.disabled = true;//Then enables the submit button
-        canSubmit = false;
+    commentInputs.submit.disabled = true;//Then enables the submit button
+    canSubmit = false;
+}
+
+// Increase vote number
+function increaseVote(el, vote) {
+    let commentID = el.getAttribute("data-id")
+    let score = document.getElementsByClassName("upvoteNumber_" + commentID)[0].innerText;
+    score = parseInt(score);
+    if (vote) {
+        score = score + 1;
+    }
+
+    if (score >= 0) {
+        document.getElementsByClassName("upvoteNumber_" + commentID)[0].innerText = score;
+    }
 }
 
 // Event listener for 
 function setEventListeners() {
-    commentInputs.submit.addEventListener("click", commentSubmit);
+    commentInputs.submit.addEventListener("click", commentSubmit);//Fires the function commentSubmit on click
     commentInputs.comment.addEventListener("keyup", enableButton);//Fires the event enableButton when the key is relesed
+    for (let i = 0; i < commentInputs.upvote.length; i++) {
+        commentInputs.upvote[i].addEventListener("click", function () {increaseVote(this, true) });
+    }
 }
 
 // Call function setEventListeners
 setEventListeners();
-
-// var post= document.getElementById("postComment");
-// post.addEventListener("click", function(){
-//     var commentBoxValue= document.getElementById("addANote").value;
- 
-//     var li = document.createElement("div");
-//     var br = document.createElement("br");
-//     var text = document.createTextNode(commentBoxValue);
-//     li.appendChild(text);
-//     document.getElementById("unordered").appendChild(br);
-//     document.getElementById("unordered").appendChild(li);
- 
-// });
