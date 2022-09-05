@@ -1,0 +1,50 @@
+body{background-color: #FBF7F3 !important;}
+
+.OwnerPost{
+    display: flex;
+    align-items: center;
+    min-height: 6vh;
+}
+
+.userName{
+    display: inline;
+    align-items: center;
+}
+
+.userName h3{
+margin:0 0 0 0;
+}
+
+
+.smallAvatar{
+    border-radius:50%;
+    width:3rem;
+    margin-right: 1.5rem; 
+}
+
+.comment{
+    border-radius: 10px;
+    background-color:#c0c9d7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titleFont{
+    font-family: 'Comfortaa', cursive;
+}
+
+.structureText{
+    font-family: 'Quicksand', sans-serif;
+}
