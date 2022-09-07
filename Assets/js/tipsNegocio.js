@@ -6,7 +6,7 @@ document.getElementById("commentBodyTitle").style.fontWeight = "bold";
 const commentInputs = {
     submit: document.getElementById("sendComment"),
     comment: document.getElementById("commentDisplayInput"),
-    upvote: document.getElementsByClassName("voteInput")
+    upvote: document.getElementsByClassName("fa-heart")
 };
 
 let canSubmit = false;
@@ -27,6 +27,7 @@ function enableButton() {
     let comment = commentInputs.comment.value.trim();
     if (comment.length > 4) { //If the comment length is longer than 4 characters 
         commentInputs.submit.classList.add("commentInputEnabled");//Creates the class commentInputEnabled
+        commentInputs.submit.classList.add("commentInputEnabled:hover")
         commentInputs.submit.disabled = false;//Then enables the submit button
         canSubmit = true;
     } else {
@@ -55,8 +56,19 @@ function increaseVote(el, vote) {
     }
 }
 
+//Fill heart input
+
+// function toggleHeart() {
+//     if (commentInputs.upvote.classList.contains('far')) {
+//         commentInputs.upvote.classList.remove('far');
+//         commentInputs.upvote.classList.add('fas');
+//     }
+// }
+
+
 // Event listener for 
 function setEventListeners() {
+    // commentInputs.upvote.addEventListener("click", toggleHeart());
     commentInputs.submit.addEventListener("click", commentSubmit);//Fires the function commentSubmit on click
     commentInputs.comment.addEventListener("keyup", enableButton);//Fires the event enableButton when the key is relesed
     for (let i = 0; i < commentInputs.upvote.length; i++) {
@@ -66,3 +78,5 @@ function setEventListeners() {
 
 // Call function setEventListeners
 setEventListeners();
+
+
