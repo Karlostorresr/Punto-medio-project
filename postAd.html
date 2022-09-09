@@ -107,9 +107,17 @@
           <label for="formFile" class="form-label">Fotos</label>
         </div>
         <div class="row gy-4 mb-4">
-          <div class="col-12 col-md-6 col-lg-3">
-            <input class="form-control mb-2 img-input" type="file" />
-            <div id="img-preview-1" class="img-preview"></div>
+          <div class="col-12 col-md-6 col-lg-3 product-post">
+            <div class="post-image">
+              <div class="img-preview"></div>
+              <label for="img-input-1" class="img-input-label">+</label>
+              <input
+                class="form-control mb-2 img-input"
+                type="file"
+                id="img-input-1"
+              />
+              <a class="img-clear">x</a>
+            </div>
             <label for="inputProductName" class="form-label">Nombre</label>
             <input
               type="text"
@@ -119,9 +127,17 @@
             <label for="inputProductPrice" class="form-label">Costo</label>
             <input type="text" class="form-control" id="inputProductPrice" />
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <input class="form-control mb-2 img-input" type="file" />
-            <div id="img-preview-2" class="img-preview"></div>
+          <div class="col-12 col-md-6 col-lg-3 product-post">
+            <div class="post-image">
+              <div class="img-preview"></div>
+              <label for="img-input-2" class="img-input-label">+</label>
+              <input
+                class="form-control mb-2 img-input"
+                type="file"
+                id="img-input-2"
+              />
+              <a class="img-clear">x</a>
+            </div>
             <label for="inputProductName" class="form-label">Nombre</label>
             <input
               type="text"
@@ -131,9 +147,17 @@
             <label for="inputProductPrice" class="form-label">Costo</label>
             <input type="text" class="form-control" id="inputProductPrice" />
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <input class="form-control mb-2 img-input" type="file" />
-            <div id="img-preview-3" class="img-preview"></div>
+          <div class="col-12 col-md-6 col-lg-3 product-post">
+            <div class="post-image">
+              <div class="img-preview"></div>
+              <label for="img-input-3" class="img-input-label">+</label>
+              <input
+                class="form-control mb-2 img-input"
+                type="file"
+                id="img-input-3"
+              />
+              <a class="img-clear">x</a>
+            </div>
             <label for="inputProductName" class="form-label">Nombre</label>
             <input
               type="text"
@@ -143,9 +167,17 @@
             <label for="inputProductPrice" class="form-label">Costo</label>
             <input type="text" class="form-control" id="inputProductPrice" />
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <input class="form-control mb-2 img-input" type="file" />
-            <div id="img-preview-4" class="img-preview"></div>
+          <div class="col-12 col-md-6 col-lg-3 product-post">
+            <div class="post-image">
+              <div class="img-preview"></div>
+              <label for="img-input-4" class="img-input-label">+</label>
+              <input
+                class="form-control mb-2 img-input"
+                type="file"
+                id="img-input-4"
+              />
+              <a class="img-clear">x</a>
+            </div>
             <label for="inputProductName" class="form-label">Nombre</label>
             <input
               type="text"
@@ -169,29 +201,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      const imgInputs = document.querySelectorAll(".img-input");
-
-      imgInputs.forEach((input, i) => {
-        const preview = document.getElementById(`img-preview-${i + 1}`);
-
-        input.onchange = (e) => {
-          const [file] = input.files;
-          if (file) {
-            // Encode the file using the FileReader API
-            const reader = new FileReader();
-            reader.onloadend = () => {
-              // Use a regex to remove data url part
-              const base64String = reader.result
-                .replace("blob:", "")
-                .replace(/^.+,/, "");
-
-              preview.style.backgroundImage = `url("data:image/png;base64,${base64String}")`;
-            };
-            reader.readAsDataURL(file);
-          }
-        };
-      });
-    </script>
+    <script src="/postAd.js"></script>
   </body>
 </html>
