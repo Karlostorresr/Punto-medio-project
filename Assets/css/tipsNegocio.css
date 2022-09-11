@@ -1,4 +1,3 @@
-@media screen and (min-width: 680px) and (max-width: 1024px) {}
 
 /*Color fondo centro*/
 body {
@@ -14,16 +13,37 @@ body {
   align-items: center;
 }
 
+nav {
+  background-color: #304a65;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+  color: #fbf7f3;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+  color: #fbf7f3;
+  font-weight: 700;
+  }
+  
+  .navbar-light .navbar-nav .nav-link:hover {
+  color: #e1c4b4;
+  opacity: 0.75;
+  }
+
 #commentBody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border: solid transparent;
   padding: 2.5rem;
   padding-top: 0rem;
   font-family: 'Quicksand', sans-serif;
-  color: #304a65;
 }
 
 #sectionTitle {
   text-align: center;
+  color: #304a65;
 }
 
 /*Page title styles*/
@@ -33,18 +53,20 @@ body {
   font-weight: 500;
   color: #A56072;
   text-align: center;
+  width: 100%;
 }
 
-#commentBody,
-#commentBody *::before,
-#commentBody *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
+#textareaWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: .3125rem 0;
+  padding: .1875rem;
 }
 
 #commentDisplayInput {
-  width: 45rem;
+  width: 100%;
   height: 10rem;
   padding: .75rem 1rem;
   border: solid #d7d6d8;
@@ -96,14 +118,6 @@ body {
   outline: none;
   opacity: 0.79;
   box-shadow: .4rem .3rem .9rem #5f5d5d;
-}
-
-.navbar {
-  margin-bottom: 1rem;
-}
-
-.bg-light {
-  background-color: #304a65 !important;
 }
 
 .commentLabel {
@@ -208,21 +222,70 @@ body {
 }
 
 .heartInput {
-  padding: .1rem;
-  border: .06rem solid transparent;
+  display: flex;
+  border: solid transparent;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  padding: .1rem;
   margin-right: 1rem;
- }
-
-.heartInput i {
-  transition: .4s;  
+  background-color: #e1b4c4;
+  padding: 0.3rem;
+  border-radius: 3rem;
+  width: 2rem;
+  height: 2rem;
+  box-shadow: .2rem .2rem #a56072;
+  color: #304a65;
+  outline: none;
 }
 
-.heartInput:hover i{
+.heartInput i {
+  transition: .4s;
+}
+
+.heartInput:hover i {
   color: #f50057;
 }
 
-.fas {
-  color:#f50057;
-  transition: .4s;
+.fa-heart:before {
+  margin-left: .06rem;
+}
+
+#primera, #segunda, #tercera{
+  height: 2.5rem;
+  width: 2.5rem;
+  vertical-align: middle;
+} /*Hace referencia a las imagenes del apartado 'Links de interes'*/
+
+#logotipo{
+  height: 3.75rem;
+  width: 17.1875rem;
+  margin: auto;
+  display: block;
+} /*Hace referencia al logo que se encuentra en la parte superior del border*/
+
+.border{
+  background-color: #304a65d7;/*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.footerTitles{
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.footerText{
+  color: #ffffff;
+  text-align: justify;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5625rem;
+  padding-top: 2rem;
+}
+
+.col{
+  padding-left: 3rem;
 }
