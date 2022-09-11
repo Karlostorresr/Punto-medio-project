@@ -7,13 +7,14 @@ const initApp = async () => { //Start the app
     const contacts = await getDataFromDB();
     // render data to page
     renderContacts(contacts);
-    // add listeners
-    listenForLikes();
-  };
+  };  
+
+  document.addEventListener("DOMContentLoaded", initApp);
 
   const getDataFromDB = async () => { //fetch data from the DB
     const dataBase = await fetch(
-      ""// API de nuestra DB
+      "https://fakerapi.it/api/v1/persons?_quantity=5"
+      // Fake API
     );
     const jsonData = await dataBase.json();
     return jsonData.data;
@@ -38,6 +39,7 @@ const initApp = async () => { //Start the app
     const article = document.createElement("article");
     const tipsComment = document.createElement("div");
     const commentHead = document.createElement("div");
+    const imgLink = document.createElement("a");
     const img = document.createElement("img");
     const card_mb = document.createElement("div");
     const row_g_0 = document.createElement("div");
@@ -51,43 +53,56 @@ const initApp = async () => { //Start the app
     const icon = document.createElement("i");
     const upvoteNumber = document.createElement("span")
     const commentDate = document.createElement("span")
-    return {article ,tipsComment, commentHead, img, card_mb, row_g_0, col_md_4, name, displayedCommentText, cardBody, card_text, vote, heartInput, icon, upvoteNumber, commentDate};
+    return {article ,tipsComment, commentHead, imgLink, img, card_mb, row_g_0, col_md_4, name, displayedCommentText, cardBody, card_text, vote, heartInput, icon, upvoteNumber, commentDate};
   };
   
-const createPersonCard = (elemObj, person) => {
-    const {article, tipsComment, commentHead, img, card_mb, row_g_0, col_md_4, name, displayedCommentText, cardBody, card_text, vote, heartInput, icon, upvoteNumber, commentDate } = elemObj;
+const createPersonCard = (elemObj, person, comment) => {
+    const {article, tipsComment, commentHead, imgLink, img, card_mb, row_g_0, col_md_4, name, displayedCommentText, cardBody, card_text, vote, heartInput, icon, upvoteNumber, commentDate } = elemObj;
     
-    tipsComment.className = "row", "d-flex", "justify-content-center";
+    article.className = "main"
+    tipsComment.className = "row d-flex justify-content-center";
+    tipsComment.setAttribute('id', 'tipsComment_');
     commentHead.className = "commentHead";
+    imgLink.setAttribute('target', '_blank');
+    imgLink.setAttribute('href', '#');
+    // img.setAttribute('src', '');
     img.className = "img-fluid";
-    card_mb.className = "card", "mb-3", "displayedComment";
-    row_g_0.className = "row", "g-0";
-    col_md_4.className = "displayedCommentPic", "col-md-4";
+    img.setAttribute('alt', 'Profile Picture');
+    card_mb.className = "card mb-3 displayedComment";
+    row_g_0.className = "row g-0";
+    col_md_4.className = "displayedCommentPic col-md-4";
     name.className = "card-title";
-    displayedCommentText.className = "displayedCommentText", "col-md-8";
+    displayedCommentText.className = "displayedCommentText col-md-8";
     cardBody.className = "card-body";
     card_text.className = "card-text";
     vote.className = "vote";
     heartInput.className = "heartInput";
-    icon.className = "far", "fa-heart", "fa-lg";
+    heartInput.setAttribute('data-id', '');
+    icon.className = "far fa-heart fa-lg";
     upvoteNumber.className = "upvoteNumber_";
     commentDate.className = "commentDate";
+
+    name.textContent = `${person.firstname} ${person.lastname}`;
+    card_text.textContent = `${person.email}`;
+    upvoteNumber.textContent = person.id;
+    img.src = faker.random.image();
+
    
-    details.appendChild(tipsComment);
-    details.appendChild(commentHead);
-    article.appendChild(img);
-    details.appendChild(card_mb);
-    details.appendChild(row_g_0);
-    details.appendChild(col_md_4);
-    details.appendChild(name);
-    details.appendChild(displayedCommentText);
-    details.appendChild(cardBody);
-    details.appendChild(card_text);
-    article.appendChild(vote);
-    article.appendChild(heartInput);
-    details.appendChild(icon);
-    details.appendChild(upvoteNumber);
-    details.appendChild(commentDate);
+    article.appendChild(tipsComment);
+    tipsComment.appendChild(commentHead);
+    commentHead.appendChild(imgLink);
+    imgLink.appendChild(img);
+    commentHead.appendChild(card_mb);
+    card_mb.appendChild(row_g_0);
+    row_g_0.appendChild(col_md_4);
+    col_md_4.appendChild(name);
+    row_g_0.appendChild(displayedCommentText);
+    displayedCommentText.appendChild(cardBody);
+    cardBody.appendChild(card_text);
+    card_mb.appendChild(vote);
+    vote.appendChild(heartInput);
+    heartInput.appendChild(icon);
+    vote.appendChild(upvoteNumber);
     return article;
   };
 
@@ -95,7 +110,8 @@ const createPersonCard = (elemObj, person) => {
 const commentInputs = {
     submit: document.getElementById("sendComment"),
     comment: document.getElementById("commentDisplayInput"),
-    upvote: document.querySelectorAll(".heartInput")
+    upvote: document.querySelectorAll(".heartInput"),
+    date: document.getElementsByClassName("commentDate")
 };
 
 //  Submit button and fields validation
@@ -110,12 +126,13 @@ function commentSubmit() {
         console.log();
         disableSubmit();
     }
+    commentInputs.comment.value="";
 }
 
 //* Check text validation 
 function enableButton() {
     let comment = commentInputs.comment.value.trim();
-    if (comment.length > 50) { //If the comment length is longer than 4 characters 
+    if (comment.length > 5) { //If the comment length is longer than 4 characters 
         commentInputs.submit.classList.add("commentInputEnabled");//Creates the class commentInputEnabled
         commentInputs.submit.classList.add("commentInputEnabled:hover")
         commentInputs.submit.disabled = false;//Then enables the submit button
@@ -138,26 +155,8 @@ function disableSubmit() {
 function setEventListeners() {
     commentInputs.submit.addEventListener("click", commentSubmit);//Fires the function commentSubmit on click
     commentInputs.comment.addEventListener("keyup", enableButton);//Fires the event enableButton when the key is relesed
-    for (let i = 0; i < commentInputs.upvote.length; i++) {
-        commentInputs.upvote[i].addEventListener("click", function () {increaseVote(this, true)});
-    }
     }
 // Event listeners
-
-// Like input functions
-//* Increase vote number
-function increaseVote(el, vote) {
-    let commentID = el.getAttribute("data-id")
-    let score = document.getElementsByClassName("upvoteNumber_" + commentID)[0].innerText;
-    score = parseInt(score);
-    if (vote) {
-        score = score + 1;
-    }
-
-    if (score >= 0) {
-        document.getElementsByClassName("upvoteNumber_" + commentID)[0].innerText = score;
-    }
-}
 
 //* Call function setEventListeners
 setEventListeners();

@@ -1,4 +1,3 @@
-
 /*Color fondo centro*/
 body {
   background-color: #fbf7f3;
@@ -15,21 +14,38 @@ body {
 
 nav {
   background-color: #304a65;
-  }
-  
-  .navbar-light .navbar-nav .nav-link {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
   color: #fbf7f3;
-  }
-  
-  .navbar-light .navbar-nav .nav-link.active {
+}
+
+.navbar-light .navbar-nav .nav-link.active {
   color: #fbf7f3;
   font-weight: 700;
-  }
-  
-  .navbar-light .navbar-nav .nav-link:hover {
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
   color: #e1c4b4;
   opacity: 0.75;
-  }
+}
+
+.btn-secondary {
+  color: #fbf7f3;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #97a9c1;
+}
+
+.btn-secondary:focus {
+  background-color: #97a9c1;
+  outline: none;
+  border-color: transparent;
+}
 
 #commentBody {
   display: flex;
@@ -54,6 +70,7 @@ nav {
   color: #A56072;
   text-align: center;
   width: 100%;
+  margin-top: 4rem;
 }
 
 #textareaWrapper {
@@ -152,7 +169,8 @@ nav {
 
 .commentHead {
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
+  padding-right: 3rem;
 }
 
 .card {
@@ -178,16 +196,18 @@ nav {
 
 .col-md-4 {
   display: grid;
-  width: 27.333333%;
+  width: 100%;
 }
 
 .card-title {
-  margin: 1rem 0.5rem 0.9rem 1.3rem;
-  font-size: 1rem;
+  margin: 1rem 0.5rem 0.9rem 1.1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .img-fluid {
   max-width: 4rem;
+  min-height: 4rem;
   margin-top: 1.1rem;
   margin-right: 1rem;
   border: solid .2rem #a56072;
@@ -251,34 +271,41 @@ nav {
   margin-left: .06rem;
 }
 
-#primera, #segunda, #tercera{
+#primera,
+#segunda,
+#tercera {
   height: 2.5rem;
   width: 2.5rem;
   vertical-align: middle;
-} /*Hace referencia a las imagenes del apartado 'Links de interes'*/
+}
 
-#logotipo{
+/*Hace referencia a las imagenes del apartado 'Links de interes'*/
+
+#logotipo {
   height: 3.75rem;
   width: 17.1875rem;
   margin: auto;
   display: block;
-} /*Hace referencia al logo que se encuentra en la parte superior del border*/
+}
 
-.border{
-  background-color: #304a65d7;/*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
+/*Hace referencia al logo que se encuentra en la parte superior del border*/
+
+.border {
+  background-color: #304a65d7;
+  /*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
   display: flex;
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
 
-.footerTitles{
+.footerTitles {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   padding-top: 2rem;
 }
 
-.footerText{
+.footerText {
   color: #ffffff;
   text-align: justify;
   font-family: 'Quicksand', sans-serif;
@@ -286,6 +313,6 @@ nav {
   padding-top: 2rem;
 }
 
-.col{
+.col {
   padding-left: 3rem;
 }
