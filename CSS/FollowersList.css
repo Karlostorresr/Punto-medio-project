@@ -1,5 +1,8 @@
 body{background-color: #FBF7F3 !important;}
 
+.follow h4 {
+    margin:0.5rem;
+}
 
 .smallAvatar{
     border-radius: 50%;
@@ -13,24 +16,23 @@ body{background-color: #FBF7F3 !important;}
     display: flex;
     align-items: center;
     min-height: 6vh;
-    background-color: #f1dfd1;
+    background-color: #c0c9d7;
     border-radius: 20px;
 }
-.OwnerPost :hover{
-    background-color: #a56072 !important;
 
-}
 .list-group-item{
-    background-color: #c0c9d7;
+    background-color: #d7dfeb;
 }
 
 .list-group-item :hover{
-    background-color: #304a65 !important;
+    background-color: #a56072 ;
+    color:#FBF7F3;
+    border-radius: 20px;
+    
 }
 .userName{
     font-family: 'Quicksand', sans-serif;
 }
-
 
 .follow{
     display:flex;

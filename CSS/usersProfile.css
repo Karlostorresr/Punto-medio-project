@@ -31,6 +31,8 @@
     width:30%;
     text-align: center; 
     padding:2vh; 
+    max-height: 37vh;
+    padding-bottom: 2vh;
     
 }
 
@@ -40,19 +42,23 @@
     max-height: 35vh;
 }
 .userImage{
-    max-width:100%;
-    max-height:inherit;
+    max-width:80%;
+    max-height:28vh;
     object-fit: contain;
     border: 1px black;
 }
 .user{
-    max-height:12.5%;
+    max-height:3.5vh;
 
 }
 
-.starSection{
+.starsSection{
+    background-color: #304a65;
     display:flex;
-    max-height: 5%;
+    min-height: 7%;
+    max-height:4.5vh;
+    max-width: fit-content;
+    margin:auto;
 }
 
 .star{
@@ -60,17 +66,15 @@
     width: 20%;
 }
 
-.starImage:hover{
-    background-color: yellow;
+.fa-star:hover{
+    color: yellow;
 }
-.starImage{
-    height: 1rem;
-    width: 1rem;
-}
+
 
 .star button {
     border:none;
-    background-color:#fbf7f3;
+    background-color:#304a65;
+    border-radius: 20px;
 }
 
 .brandDescription{
@@ -90,6 +94,7 @@
     text-align: center;
     justify-content: center;
     max-height: 35vh;
+    height: 100%;
 }
 
 .newPostSection{
@@ -123,20 +128,18 @@
 .imageNreactions{
     background-color:#f1dfd1;
 }
+
 .imageContainer{
-    max-width: 95%;
-    max-height: 95%;
+    width: 100%;
+    height: 85%;
+    max-height: 85%;
     margin:auto;
     padding: 1vh;
 }
 
 .productImage{
-    width: fit-content;  
-    object-fit: fill;
-    display: block;
-    margin: auto; 
-    max-width:100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }   
 
 
@@ -145,15 +148,19 @@
    text-align: center;
    background-color:#a56072;
    border-radius: 0% 0% 20px 20px;
-   max-height:20% ;
+   max-height:15% ;
 }
 
 .reactionButton{
     background-color: #a56072;
     border:none;
-    margin: 2vh 0;
+    margin: 1vh;
     width: 32%;
-    
+}
+
+.reactionButton :hover{
+    background-color: #304a65;
+    border-radius: 50%;
 }
 
 .reactionButton button{
@@ -163,23 +170,29 @@
     margin: 0%;
 }
 
+
 .reactionLogo{
     height: 2vh;
     width:2vw;
 }
 
 #like:hover{
-    background-color: red;
+    color: red;
+    width: 2rem;
+    height: auto;
 }
 
 #dislike:hover{
-    background-color: gray;
+    color: gray;
+    width: 2rem;
+    height: auto;
 }
 
 #comment:hover{
-    background-color: green;
+    color: green;
+    width: 2rem;
+    height: auto;
 }
-
 
 .productDescription{
     margin-top: .5rem;
@@ -187,6 +200,8 @@
     padding: 1rem;
     min-width: 10rem;
 }
+
+footer{background-color: #304a65;}
 
 .border{
     border-radius: 20px;
@@ -257,10 +272,8 @@
         width: 4vw;
     }
 
-    
-    
-
-
-
+    .productName{
+        display:block;
+    }
 
 }

@@ -25,21 +25,17 @@ margin:0 0 0 0;
 .comment{
     border-radius: 10px;
     background-color:#c0c9d7;
+    margin: 1rem;
+    padding:.5rem;
+    max-width: 90vw;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn{
+    margin:.5rem;
+    background-color: #c0c9d7;
+    border-radius: 20px;
+    border: none;
+}
 
 .titleFont{
     font-family: 'Comfortaa', cursive;
@@ -47,4 +43,16 @@ margin:0 0 0 0;
 
 .structureText{
     font-family: 'Quicksand', sans-serif;
+}
+
+@media screen and (min-width: 750px) {
+    .col-md-8{
+        margin:auto;
+    } 
+}
+
+@media screen and (min-width: 1200px) {
+    .card{
+        margin:auto;
+    } 
 }
