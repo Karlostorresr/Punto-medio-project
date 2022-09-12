@@ -30,6 +30,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+p {
+  text-align: justify;
+}
+
 .equipo {
   letter-spacing: 0.5rem;
   font-size: 0.8rem;
@@ -45,7 +49,20 @@ h1 {
 }
 
 .foto-equipo {
-  max-height: 7rem;
-  max-width: 7rem;
+  max-height: 6rem;
+  max-width: 6rem;
   border-radius: 50%;
+}
+
+.principal h6 {
+  font-size: 0.8rem;
+}
+
+.social-media {
+  max-height: 1rem;
+  max-width: 1rem;
+}
+
+.card-body a {
+  text-decoration: none;
 }
