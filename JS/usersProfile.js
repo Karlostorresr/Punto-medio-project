@@ -130,3 +130,7 @@ function readDB(commentArray) {
 }
 
 readDB(productPosted);
+
+
+////////////////
+

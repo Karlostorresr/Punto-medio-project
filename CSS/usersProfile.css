@@ -2,168 +2,171 @@
     box-sizing: border-box;
 }
 
-.body{
+.body {
     background-color: #fbf7f3;
 }
-.navbar{
-    margin-bottom:2vh; 
+
+.navbar {
+    margin-bottom: 2vh;
 }
 
-.brandImageSection{
+.brandImageSection {
     background-color: bisque;
-    height:15vh;
+    height: 15vh;
 }
-.brandImagePicture{
+
+.brandImagePicture {
     width: 100%;
     height: 15vh;
     object-fit: fill;
 }
-.userProfile{
+
+.userProfile {
     display: flex;
     width: 100%;
-    height: 40vh;
     margin: auto;
-    
-}
-.entrepreneurDescription{
-    height:inherit;
-    background-color: #fbf7f3;
-    width:30%;
-    text-align: center; 
-    padding:2vh; 
-    max-height: 37vh;
-    padding-bottom: 2vh;
-    
+
 }
 
-.userImageContainer{
+.entrepreneurDescription {
+    height: inherit;
+    background-color: #fbf7f3;
+    width: 40%;
+    text-align: center;
+    padding: 2vh;
+    padding-bottom: 2vh;
+}
+
+.userImageContainer {
     height: auto;
     width: 100%;
     max-height: 35vh;
 }
-.userImage{
-    max-width:80%;
-    max-height:28vh;
-    object-fit: contain;
-    border: 1px black;
-}
-.user{
-    max-height:3.5vh;
 
+
+.user {
+    max-height: 3.5vh;
 }
 
-.starsSection{
+.starsSectionContainer{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+.starsSection {
+    width: 100%;  
     background-color: #304a65;
-    display:flex;
-    min-height: 7%;
-    max-height:4.5vh;
-    max-width: fit-content;
-    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.star{
-    display: inline;
-    width: 20%;
+.newPostSection {
+    width: 60%;
+    height: 10%;
 }
 
-.fa-star:hover{
+.fa-star:hover {
     color: yellow;
 }
 
-
 .star button {
-    border:none;
-    background-color:#304a65;
+    border: none;
+    background-color: #304a65;
     border-radius: 20px;
 }
 
-.brandDescription{
+.brandDescription {
     height: inherit;
     background-color: #fbf7f3;
-    width:70%;
-    padding:2vh;
-     
+    width: 60%;
+    padding: 1rem 0 0 0
 }
 
-.brandTextDescription{
-    word-wrap:break-word;
+.brandTextDescription {
+    word-wrap: break-word;
     overflow: auto;
     /*border: 5px black solid;*/
     padding: 1rem;
     background-color: #c0c9d7;
     text-align: center;
     justify-content: center;
-    max-height: 35vh;
-    height: 100%;
+    height: 80%;
 }
 
-.newPostSection{
-    height: 6vh;
-    min-height: 4vh;
+.newPostSection {
+    min-height: 20%;
     background-color: #fbf7f3;
     text-align: center;
-    margin:2vh;
+    margin: 2vh;
 }
 
-.newPostButton{
+.newPostButton {
     background-color: #a56072;
-    width: 15%;
 }
 
-.productsPosted{
+.productsPosted {
     background-color: #fbf7f3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     height: auto;
     width: auto;
+    margin-bottom: 2rem;
 }
 
-.soloProduct{
+.soloProduct {
     height: auto;
     width: auto;
-    padding:1rem;
+    padding: 1rem;
 }
 
-.imageNreactions{
-    background-color:#f1dfd1;
+.actionsContainer {
+    display: flex;
+    height: 5%;
+    margin-bottom: 2rem;
 }
 
-.imageContainer{
+.imageNreactions {
+    background-color: #f1dfd1;
+}
+
+.imageContainer {
     width: 100%;
     height: 85%;
     max-height: 85%;
-    margin:auto;
+    margin: auto;
     padding: 1vh;
 }
 
-.productImage{
+.productImage {
     max-width: 100%;
     max-height: 100%;
-}   
-
-
-.reactionsContainer{
-   display:flex;
-   text-align: center;
-   background-color:#a56072;
-   border-radius: 0% 0% 20px 20px;
-   max-height:15% ;
 }
 
-.reactionButton{
+
+.reactionsContainer {
+    display: flex;
+    text-align: center;
     background-color: #a56072;
-    border:none;
+    border-radius: 0% 0% 20px 20px;
+    max-height: 15%;
+}
+
+.reactionButton {
+    background-color: #a56072;
+    border: none;
     margin: 1vh;
     width: 32%;
 }
 
-.reactionButton :hover{
+.reactionButton :hover {
     background-color: #304a65;
     border-radius: 50%;
 }
 
-.reactionButton button{
+.reactionButton button {
     background-color: #a56072;
     border: none;
     padding: 0;
@@ -171,109 +174,345 @@
 }
 
 
-.reactionLogo{
+.reactionLogo {
     height: 2vh;
-    width:2vw;
+    width: 2vw;
 }
 
-#like:hover{
+#like:hover {
     color: red;
     width: 2rem;
     height: auto;
 }
 
-#dislike:hover{
+#dislike:hover {
     color: gray;
     width: 2rem;
     height: auto;
 }
 
-#comment:hover{
+#comment:hover {
     color: green;
     width: 2rem;
     height: auto;
 }
 
-.productDescription{
+.productDescription {
     margin-top: .5rem;
     background-color: #c0c9d7;
     padding: 1rem;
     min-width: 10rem;
 }
 
-footer{background-color: #304a65;}
+footer {
+    background-color: #304a65;
+}
 
-.border{
+.border {
     border-radius: 20px;
 }
 
-.fontText{
+.fontText {
     font-family: 'Quicksand', sans-serif;
 }
 
-.fontTextTitle{
+.fontTextTitle {
     font-family: 'Comfortaa', cursive;
 
 }
 
+
+#primera,
+#segunda,
+#tercera {
+    height: 2.5rem;
+    width: 2.5rem;
+    vertical-align: middle;
+}
+
+/*Hace referencia a las imagenes del apartado 'Links de interes'*/
+
+#logotipo {
+    height: 3.75rem;
+    width: 17.1875rem;
+    margin: auto;
+    display: block;
+}
+
+/*Hace referencia al logo que se encuentra en la parte superior del border*/
+
+.borderFoot {
+    background-color: #304a65d7;
+    /*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
+    display: flex;
+    padding-top: 0rem;
+    padding-bottom: 0;
+
+}
+
+footer h3 {
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    padding-top: .5rem;
+    margin: 0;
+}
+
+.col {
+    margin: auto;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+nav {
+    background-color: #304a65;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fbf7f3;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fbf7f3;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e1c4b4;
+    opacity: 0.75;
+}
+
 @media screen and (max-width:420px) {
-    .productDescription{
-        display:none;
+
+    .brandImageSection {
+        height: 10vh;
     }
+
+    .brandImagePicture {
+        width: 100%;
+        height: inherit;
+    }
+
+    .userProfile {
+        height: 29vh;
+        padding: 0;
+    }
+
+    .entrepreneurDescription, .brandDescription {
+        margin: 0;
+        padding: 1rem 0 0 0;
+        height: inherit;
+        width: 40%;
+    }
+
+    .brandDescription {
+        width: 60%;
+    }
+
+    .userImageContainer {
+        height: 85%;
+    }
+
+    .userImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border: 1px black;
+    }
+
+    .user {
+        height: 15%;
+        font-size: x-small;
+    }
+
+    .actionsContainer {
+        height: 5%;
+        margin-bottom: 1rem;
+    }
+
+    .starsSection {
+        width: 100%;
+        height: 10%;
+        margin: 0;
+    }
+
+    .newPostSection {
+        width: 60%;
+        margin: 0;
+    }
+
+    .star {
+        font-size: small;
+        display: block;
+        height: 100%;
+    }
+
+    .productDescription {
+        display: none;
+    }
+
+    .brandTextDescription {
+        height: 85%;
+        padding: 0.5rem;
+        font-size: x-small;
+    }
+
     .soloProduct {
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         border-radius: 0;
     }
-    .imageNreactions{
-        padding:0;
+
+    .imageNreactions {
+        padding: 0;
         margin: 0;
         border-radius: 0;
     }
 
-    .imageContainer{
-        padding:0;
+    .imageContainer {
+        padding: 0;
         margin: 0;
         border-radius: 0;
         max-width: 100%;
         max-height: 100%;
     }
 
-    .productImage{       
+    .productImage {
         border-radius: 0;
     }
 
-    .reactionsContainer{
-        padding:0;
+    .reactionsContainer {
+        padding: 0;
         margin: 0;
         border-radius: 0;
         max-height: 7vh;
     }
 
-    .brandImageSection{
+    .brandImageSection {
         max-height: 10vh;
     }
-    .userProfile{
-        max-height: 25vh; 
-        padding: 0;
+
+    .reactionButton {
+        margin: 0;
     }
 
-    .brandTextDescription{
-        height: 24vh;
-    }
-
-    .reactionButton{
-        margin:0;
-    }
-
-
-    .reactionButton button{
+    .reactionButton button {
         height: 4vh;
         width: 4vw;
     }
 
-    .productName{
-        display:block;
+    .productName {
+        display: block;
     }
 
+    .newPostSection {
+        height: 10%;
+        width: 60%;
+        font-size: small;
+        display: block;
+    }
+
+
 }
+
+@media screen and (min-width:420px) {
+
+    .userProfile {
+        height: 38vh;
+    }
+    .entrepreneurDescription, .brandDescription {
+        height: 38vh;        
+        padding-bottom: 0;
+    }
+    .userImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border: 1px black;
+    }
+
+    .soloProduct{
+        margin: 0;
+        padding: 0;
+    }
+
+    .productDescription{
+        display: none;
+    }
+
+    .newPostSection{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:576px) {
+
+    .userProfile {
+        height: 40vh;
+    }
+    .entrepreneurDescription, .brandDescription {
+        height: inherit;        
+        padding-bottom: 0;
+    }    
+
+    .userImageContainer {
+        height: 85%;
+    }
+
+    .user {
+        height: 15%
+    }
+
+    .userImage {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        object-fit: contain;
+        border: 1px black;
+    }
+
+    .soloProduct {
+        margin: 0;
+        padding: 0;
+    }
+
+    .productDescription{
+        display: none;
+    }
+
+    .newPostSection{
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .productDescription{
+        display: block;
+        height: 7.5rem;
+        overflow: hidden;
+    }
+
+    .soloProduct{
+        margin:0 .8rem .8rem 0;
+    }
+
+    .starsSection{
+        width: 70%;
+    }
+
+    /* ipad mini */
+}
+
+@media screen and (min-width:992px) {}
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1400px) {}
