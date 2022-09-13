@@ -308,7 +308,7 @@ nav {
 
     .entrepreneurDescription, .brandDescription {
         margin: 0;
-        padding: 1rem 0 0 0;
+        padding: .5rem .8rem 0 0;
         height: inherit;
         width: 40%;
     }
@@ -330,7 +330,7 @@ nav {
 
     .user {
         height: 15%;
-        font-size: x-small;
+        font-size: small;
     }
 
     .actionsContainer {
@@ -494,6 +494,8 @@ nav {
 }
 
 @media screen and (min-width:768px) {
+    
+
     .productDescription{
         display: block;
         height: 7.5rem;
@@ -501,7 +503,7 @@ nav {
     }
 
     .soloProduct{
-        margin:0 .8rem .8rem 0;
+        margin:0 1rem 1rem 0;
     }
 
     .starsSection{
@@ -511,7 +513,12 @@ nav {
     /* ipad mini */
 }
 
-@media screen and (min-width:992px) {}
+@media screen and (min-width:992px) {
+    .productsPosted{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
 
 @media screen and (min-width:1200px) {}
 
