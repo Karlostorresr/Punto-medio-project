@@ -1,0 +1,33 @@
+nav {
+    background-color: #304a65;
+    }
+    
+    .navbar-light .navbar-nav .nav-link {
+    color: #fbf7f3;
+    }
+    
+    .navbar-light .navbar-nav .nav-link.active {
+    color: #fbf7f3;
+    font-weight: 700;
+    }
+    
+    .navbar-light .navbar-nav .nav-link:hover {
+    color: #e1c4b4;
+    opacity: 0.75;
+    }
+    
+    .btn-secondary {
+    color: #fbf7f3;
+    background-color: transparent;
+    border-color: transparent;
+    }
+    
+    .btn-secondary:hover {
+    background-color: #97a9c1;
+    }
+    
+    .btn-secondary:focus {
+    background-color: #97a9c1;
+    outline: none;
+    border-color: transparent;
+    }

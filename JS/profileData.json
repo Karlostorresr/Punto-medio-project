@@ -1,0 +1,17 @@
+[
+    {
+        "image":"/Multimedia/Sombrero charro.png",
+        "productName": "Sombrero charro",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!"
+    },
+    {
+        "image":"/Multimedia/Imagenprueb1.png",
+        "productName": "Lentes para perro ",
+        "descripcion": "Lentes para perro playero costo:50 pelucholares"
+    },
+    {
+        "image":"/Multimedia/IMAGENPRUEB2.png",
+        "productName": "Gorra con grabado de leon",
+        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!"
+    }
+]
