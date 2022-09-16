@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+body{background-color: #FBF7F3 !important;}
+
 .body {
     background-color: #fbf7f3;
 }
@@ -37,6 +39,12 @@
     padding-bottom: 2vh;
 }
 
+.user{
+    color: #304a65;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+}
+
 .userImageContainer {
     height: auto;
     width: 100%;
@@ -48,14 +56,15 @@
     max-height: 3.5vh;
 }
 
-.starsSectionContainer{
+.starsSectionContainer {
     width: 40%;
     height: 10%;
     display: flex;
     justify-content: center;
 }
+
 .starsSection {
-    width: 100%;  
+    width: 100%;
     background-color: #304a65;
     display: flex;
     justify-content: space-around;
@@ -67,7 +76,16 @@
     height: 10%;
 }
 
-.fa-star:hover {
+.fa-star,
+.fa-heart,
+.fa-thumbs-down,
+.fa-comment {
+    color: #fbf7f3;
+
+}
+
+
+.starSelected {
     color: yellow;
 }
 
@@ -81,7 +99,7 @@
     height: inherit;
     background-color: #fbf7f3;
     width: 60%;
-    padding: 1rem 0 0 0
+    padding: 2vh 0 0 0
 }
 
 .brandTextDescription {
@@ -89,7 +107,7 @@
     overflow: auto;
     /*border: 5px black solid;*/
     padding: 1rem;
-    background-color: #c0c9d7;
+    background-color: #d7d6d8;
     text-align: center;
     justify-content: center;
     height: 80%;
@@ -100,11 +118,18 @@
     background-color: #fbf7f3;
     text-align: center;
     margin: 2vh;
+
 }
 
 .newPostButton {
     background-color: #a56072;
 }
+
+.newPostButton:hover{
+    background-color: #304a65;
+}
+
+
 
 .productsPosted {
     background-color: #fbf7f3;
@@ -199,7 +224,7 @@
 
 .productDescription {
     margin-top: .5rem;
-    background-color: #c0c9d7;
+    background-color: #d7d6d8;
     padding: 1rem;
     min-width: 10rem;
 }
@@ -214,64 +239,16 @@ footer {
 
 .fontText {
     font-family: 'Quicksand', sans-serif;
+    color: #304a65;
 }
 
 .fontTextTitle {
     font-family: 'Comfortaa', cursive;
+    color: #fbf7f3;
 
 }
 
-
-#primera,
-#segunda,
-#tercera {
-    height: 2.5rem;
-    width: 2.5rem;
-    vertical-align: middle;
-}
-
-/*Hace referencia a las imagenes del apartado 'Links de interes'*/
-
-#logotipo {
-    height: 3.75rem;
-    width: 17.1875rem;
-    margin: auto;
-    display: block;
-}
-
-/*Hace referencia al logo que se encuentra en la parte superior del border*/
-
-.borderFoot {
-    background-color: #304a65d7;
-    /*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
-    display: flex;
-    padding-top: 0rem;
-    padding-bottom: 0;
-
-}
-
-footer h3 {
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    padding-top: 1rem;
-}
-
-footer p {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1rem;
-    padding-top: .5rem;
-    margin: 0;
-}
-
-.col {
-    margin: auto;
-    text-align: center;
-    padding-left: 3rem;
-}
-
+/*Navbar*/
 nav {
     background-color: #304a65;
 }
@@ -290,6 +267,24 @@ nav {
     opacity: 0.75;
 }
 
+.btn-secondary {
+    color: #fbf7f3;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #97a9c1;
+}
+
+.btn-secondary:focus {
+    background-color: #97a9c1;
+    outline: none;
+    border-color: transparent;
+}
+
+
+/*MediaQueries*/
 @media screen and (max-width:420px) {
 
     .brandImageSection {
@@ -306,7 +301,8 @@ nav {
         padding: 0;
     }
 
-    .entrepreneurDescription, .brandDescription {
+    .entrepreneurDescription,
+    .brandDescription {
         margin: 0;
         padding: .5rem .8rem 0 0;
         height: inherit;
@@ -428,10 +424,13 @@ nav {
     .userProfile {
         height: 38vh;
     }
-    .entrepreneurDescription, .brandDescription {
-        height: 38vh;        
+
+    .entrepreneurDescription,
+    .brandDescription {
+        height: 38vh;
         padding-bottom: 0;
     }
+
     .userImage {
         max-width: 100%;
         max-height: 100%;
@@ -439,16 +438,16 @@ nav {
         border: 1px black;
     }
 
-    .soloProduct{
+    .soloProduct {
         margin: 0;
         padding: 0;
     }
 
-    .productDescription{
+    .productDescription {
         display: none;
     }
 
-    .newPostSection{
+    .newPostSection {
         margin: 0;
     }
 }
@@ -458,10 +457,12 @@ nav {
     .userProfile {
         height: 40vh;
     }
-    .entrepreneurDescription, .brandDescription {
-        height: inherit;        
+
+    .entrepreneurDescription,
+    .brandDescription {
+        height: inherit;
         padding-bottom: 0;
-    }    
+    }
 
     .userImageContainer {
         height: 85%;
@@ -484,29 +485,29 @@ nav {
         padding: 0;
     }
 
-    .productDescription{
+    .productDescription {
         display: none;
     }
 
-    .newPostSection{
+    .newPostSection {
         margin: 0;
     }
 }
 
 @media screen and (min-width:768px) {
-    
 
-    .productDescription{
+
+    .productDescription {
         display: block;
         height: 7.5rem;
         overflow: hidden;
     }
 
-    .soloProduct{
-        margin:0 1rem 1rem 0;
+    .soloProduct {
+        margin: 0 1rem 1rem 0;
     }
 
-    .starsSection{
+    .starsSection {
         width: 70%;
     }
 
@@ -514,7 +515,7 @@ nav {
 }
 
 @media screen and (min-width:992px) {
-    .productsPosted{
+    .productsPosted {
         grid-template-columns: repeat(4, 1fr);
 
     }
@@ -523,3 +524,39 @@ nav {
 @media screen and (min-width:1200px) {}
 
 @media screen and (min-width:1400px) {}
+
+/*CSS Footer*/
+#primera,
+#segunda,
+#tercera {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+footer .border {
+    background-color: #304a65d7;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9 rem;
+    padding-top: 1rem;
+}
+
+footer .col {
+    padding-left: 3rem;
+}

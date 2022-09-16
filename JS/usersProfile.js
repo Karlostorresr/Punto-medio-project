@@ -1,19 +1,72 @@
+/////////////////
+/////Usuario/////
+/////////////////
+let userInfo = {
+        "userId":5128,
+        "userName":"Lheilani",
+        "userProfilePicture":"/Multimedia/lheicas.jpeg",
+        "userLastName":"Castillo",
+        "brandPicture":"/Multimedia/portadaMagnolia.png",
+        "brandDescriptionText":"Magnolia: Es una boutique local, la cual busca poner al alcance de todas las personas vestir siempre comodas y a la moda. Ofrecemos muchos accesorios  y articulos que se adapatan a todos los estilos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem "
+    }
+;
+
+function readUserDB (usuarioID){
+    let userName =document.createElement('span');
+    userName.className='userName';
+    userName.innerText=userInfo["userName"] + " " + userInfo["userLastName"];
+
+    console.log(userName);
+    entrepreneurName=document.getElementById("userNameContainer");
+    entrepreneurName.appendChild(userName);
+
+    let userPhoto= document.createElement('img');
+    userPhoto.className='userImage border';
+    userPhoto.src=userInfo["userProfilePicture"];
+    entrepreneurPhoto=document.getElementById("userImageContainer");
+    entrepreneurPhoto.appendChild(userPhoto);
+
+    let brandPhoto=document.createElement('img');
+    brandPhoto.className='brandImagePicture';
+    brandPhoto.src=userInfo["brandPicture"];
+    brandLogo=document.getElementById("brandPhotoContainer");
+    brandLogo.appendChild(brandPhoto);
+
+    let textDescription=document.createElement('div');
+    textDescription.className="brandTextDescription fontText border";
+    textDescription.innerText=userInfo["brandDescriptionText"];
+    brandText=document.getElementById("brandDescription");
+    brandText.appendChild(textDescription);
+
+
+    return brandPhoto;    
+
+}
+
+readUserDB(userInfo);
+
+
+
+/////////////////
+//Publicaciones//
+/////////////////
+
 let productPosted = [
     {
         "id": 6545454,
-        "image": "/Multimedia/Sombrero charro.png",
+        "image": "/Multimedia/Iprueba2.png",
         "productName": "Sombrero charro",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!"
     },
     {
         "id": 9878454,
-        "image": "/Multimedia/imagenprueba1.png",
+        "image": "/Multimedia/Iprueba4.png",
         "productName": "Lentes para perro ",
         "description": "Lentes para perro playero costo:50 pelucholares"
     },
     {
         "id": 7575754,
-        "image": "/Multimedia/IMAGENPRUEB2.png",
+        "image": "/Multimedia/Iprueba3.png",
         "productName": "Gorra con grabado de leon",
         "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!"
     }
@@ -132,5 +185,35 @@ function readDB(commentArray) {
 readDB(productPosted);
 
 
-////////////////
+/////////////////
+/////Stars///////
+/////////////////
+
+let starSection = ['Star-1','Star-2','Star-3','Star-4','Star-5'];
+
+function readStar(array){
+    array.forEach(element => {
+        let star= document.getElementById(element);
+        let starNumber=element.split("-");
+        star.addEventListener("click", (details) => {
+            console.log("La estrella " + starNumber[1] + " fue clickeada" );
+            changeStarColor(starNumber[1]);
+        });
+    })
+}
+
+function changeStarColor(id){
+    let i=1;
+    for (i; i<=id; i++){
+        let StarIconElement = document.getElementById("Star-"+i);
+        StarIconElement.className='starSelected fa-regular fa-star';
+    }
+    
+    for(i; i<=5; i++) {
+        let StarIconElement = document.getElementById("Star-"+i);
+        StarIconElement.className='fa-regular fa-star';
+    }
+}
+readStar(starSection);
+
 

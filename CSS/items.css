@@ -1,46 +1,3 @@
-#primera, #segunda, #tercera{
-    height: 2.5rem;
-    width: 2.5rem;
-    vertical-align: middle;
-} /*Hace referencia a las imagenes del apartado 'Links de interes'*/
-
-#logotipo{
-    height: 3.75rem;
-    width: 17.1875rem;
-    margin: auto;
-    display: block;
-} /*Hace referencia al logo que se encuentra en la parte superior del border*/
-
-.border{
-    background-color: #304a65d7;/*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-}
-
-h3{
-    color: #ffffff;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    padding-top: 2rem;
-}
-
-p{
-    color: #ffffff;
-    text-align: justify;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.5625rem;
-    padding-top: 2rem;
-}
-
-.col{
-    padding-left: 3rem;
-}
-
-.footer{
-    background-color: #304a65d7;
-}
-
 nav {
     background-color: #304a65;
     }
@@ -57,4 +14,20 @@ nav {
     .navbar-light .navbar-nav .nav-link:hover {
     color: #e1c4b4;
     opacity: 0.75;
+    }
+    
+    .btn-secondary {
+    color: #fbf7f3;
+    background-color: transparent;
+    border-color: transparent;
+    }
+    
+    .btn-secondary:hover {
+    background-color: #97a9c1;
+    }
+    
+    .btn-secondary:focus {
+    background-color: #97a9c1;
+    outline: none;
+    border-color: transparent;
     }
