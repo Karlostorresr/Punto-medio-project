@@ -98,7 +98,3 @@ const createPersonCard = (elemObj, person) => {
   vote.appendChild(upvoteNumber);
   return article;
 };
-
-// var commentsNumbers = new Array(person.counter)
-
-// commentsNumbers.forEach(giveDataId())
