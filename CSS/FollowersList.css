@@ -1,0 +1,133 @@
+body{background-color: #FBF7F3 !important;}
+
+.container{
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+}
+
+.follow h4 {
+    margin:0.5rem;
+    color:#a56072;
+}
+
+.smallAvatar{
+    border-radius: 50%;
+    width: 3rem; 
+    margin-right: 1.5rem; 
+    margin-left:.5rem;
+
+}
+
+.OwnerPost{
+    display: flex;
+    align-items: center;
+    min-height: 6vh;
+    background-color: #c0c9d7;
+    border-radius: 20px;
+}
+
+.list-group{
+    border-radius: 20px;
+}
+
+.list-group-item{
+    background-color: #d7dfeb;
+    color:#304a65;
+}
+
+.list-group button:hover{
+    background-color: #304a65;
+    
+    
+}
+.list-group-item :hover{
+    background-color: #a56072 ;
+    border-radius: 20px;
+    color:#FBF7F3;
+}
+.userName{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.follow{
+    display:flex;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.followContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+/**/
+
+nav {
+    background-color: #304a65;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fbf7f3;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fbf7f3;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e1c4b4;
+    opacity: 0.75;
+}
+
+.btn-secondary {
+    color: #fbf7f3;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #97a9c1;
+}
+
+.btn-secondary:focus {
+    background-color: #97a9c1;
+    outline: none;
+    border-color: transparent;
+}
+
+/*FOOTER*/
+/*CSS Footer*/
+#primera,
+#segunda,
+#tercera {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+footer .border {
+    background-color: #304a65d7;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9 rem;
+    padding-top: 1rem;
+}
+
+footer .col {
+    padding-left: 3rem;
+}
