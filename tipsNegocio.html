@@ -17,13 +17,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&display=swap" rel="stylesheet">
 
   <title>Tips de Venta</title>
+  <link rel="icon" href="./Multimedia/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="Assets/css/tipsNegocio.css">
+  <link rel="stylesheet" href="./CSS/tipsNegocio.css">
   <script src="https://kit.fontawesome.com/c63284f5dc.js" crossorigin="anonymous"></script>
-  <script src="./Assets/js/tipsNegocio.js" defer></script>
-  <script src="./Assets/js/voteInput.js" defer></script>
-  <script src="./Assets/js/faker.min.js" defer></script>
+  <script src="./JS/loadComments.js" defer></script>
+  <script src="./JS/inputs_outputs.js" defer></script>
+  <script src="./JS/faker.min.js" defer></script>
 </head>
 
 <body>
@@ -35,7 +36,7 @@
       <!-- Navbar brand -->
       <div class="logo">
         <a class="navbar-brand" href="#">
-          <img src="./Assets/img/LogoLight.png" alt="" width="100" height="25" />
+          <img src="./Multimedia/LogoLight.png" alt="" width="100" height="25" />
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -45,10 +46,11 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="#">Categorías</a>
-          <a class="nav-link" href="#">Publica</a>
+          <a class="nav-link" href="#">Publíca</a>
           <a class="nav-link" href="#">Tips de Venta</a>
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Hola, User
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -87,88 +89,53 @@
       <h3>Comentarios</h3>
     </div>
     <main>
-      <article class="main">
-        <div class="row d-flex justify-content-center" id="tipsComment_1">
-          <!-- Comment body -->
-          <div class="commentHead">
-            <a href="https://www.google.com.mx/" target="_blank">
-            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" class="img-fluid"
-              alt="Profile picture">
-            </a>
-            <div class="card mb-3 displayedComment">
-              <div class="row g-0">
-                <div class="displayedCommentPic col-md-4">
-                  <h5 class="card-title">Spondula Merino</h5>
-                </div>
-                <div class="displayedCommentText col-md-8">
-                  <div class="card-body">
-                    <p class="card-text">Tus clientes y prospectos quieren saber y escuchar lo que tienes que decir pero
-                      te aseguro que primero quieren que los escuches a ellos. Además, ¿tu como vendedor cómo sabrás lo
-                      que tus clientes o prospectos quieren si no les das el chance de que te lo digan?</p>
-                  </div>
-                </div>
-              </div>
-              <!-- Comment body footer -->
-              <div class="vote">
-                <button class="heartInput" data-id="1">
-                  <i class="far fa-heart fa-lg"></i>
-                </button>
-                <span class="upvoteNumber_1">0</span>
-              </div>
-              <!-- Comment body footer -->
-            </div>
-          </div>
-        </div>
-      </article>
-      <!-- Comment body -->
+
     </main>
   </div>
   <!-- Comment -->
 
-  <!-- Footer -->
-  <footer>
-    <div class="border">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="row">
-            <img src="./Assets/img/LogoLight.png" alt="" id="logotipo">
-            <!--Se inserta imagen del logotipo-->
-          </div>
-          <div class="col">
-            <h3 class="footerTitles">Sobre Nosotros</h3>
-            <p class="footerText">¡Conóce un poco más acerca del equipo de trabajo detrás de la plataforma Punto Medio!
-            </p>
-          </div>
-          <div class="col">
-            <h3 class="footerTitles">Contacto</h3>
-            <p class="footerText">¿Necesitas ayuda? Contáctanos aquí.</p>
-          </div>
-          <div class="col">
-            <h3 class="footerTitles">Links de interés</h3>
-            <a href="https://github.com/Karlostorresr/Punto-medio-project" target="_blank">
-              <p class="footerText"><img src="/Assets/img/kithub.png" alt="" id="primera">
-            </a>
-            Repositorio en GitHub.</p>
-            <!--Se agrega logo de github, png blanco-->
-            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH_OR4qmvpUNQAAAYMpbLZwNt1Lu3_kX949kH2w0BvQIN3VTTdfH9CgLJ_UBgxM5PlsWP7vDFVIi6YS7VEII0BkaD-PM5o7EcKUlfwop0VTsczUKOTCYyJ-8t6ecO74x1q-77U=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F3244630839%3Ffbclid%3DIwAR3Cec5kLqF-NiJ981RLELJ036EbU11Inttkp-tuHQdRD-RXEddm6O55F2w"
-              target="_blank">
-              <p class="footerText"><img src="/Assets/img/linkdin.png" alt="" id="segunda">
-            </a>Perfil empresarial.</p>
-            <!--Se agrega logo de linkedin blanco-->
-            <a href="https://open.spotify.com/playlist/0LnnAZEuXNR16jaoDeQHtI" target="_blank">
-              <p class="footerText"><img src="/Assets/img/spoti.png" alt="" id="tercera">
-            </a>Nuestra playlist.</p>
-            <!--Se agrega logo de spotify blanco, png-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- Footer-->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+</script>
 </body>
+
+<footer>
+  <div class="border">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="row">
+          <!-- <img src="./Multimedia/LogoLight.png" alt="" id="logotipo"> -->
+          <!--Se inserta imagen del logotipo-->
+        </div>
+        <div class="col">
+          <h3>Sobre Nosotros</h3>
+          <p>¡Conóce un poco más acerca del equipo de trabajo detrás de la plataforma Punto Medio!</p>
+        </div>
+        <div class="col">
+          <h3>Contacto</h3>
+          <p>¿Necesitas ayuda? Contáctanos aquí.</p>
+        </div>
+        <div class="col">
+          <h3>Links de interés</h3>
+          <a href="https://github.com/Karlostorresr/Punto-medio-project" target="_blank">
+            <p><img src="./Multimedia/kithub.png" alt="" id="primera">
+          </a>
+          Repositorio en GitHub.</p>
+          <!--Se agrega logo de github, png blanco-->
+          <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH_OR4qmvpUNQAAAYMpbLZwNt1Lu3_kX949kH2w0BvQIN3VTTdfH9CgLJ_UBgxM5PlsWP7vDFVIi6YS7VEII0BkaD-PM5o7EcKUlfwop0VTsczUKOTCYyJ-8t6ecO74x1q-77U=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F3244630839%3Ffbclid%3DIwAR3Cec5kLqF-NiJ981RLELJ036EbU11Inttkp-tuHQdRD-RXEddm6O55F2w"
+            target="_blank">
+            <p><img src="./Multimedia/linkdin.png" alt="" id="segunda">
+          </a>Perfil empresarial.</p>
+          <!--Se agrega logo de linkedin blanco-->
+          <a href="https://open.spotify.com/playlist/0LnnAZEuXNR16jaoDeQHtI" target="_blank">
+            <p><img src="./Multimedia/spoti.png" alt="" id="tercera">
+          </a>Nuestra playlist.</p>
+          <!--Se agrega logo de spotify blanco, png-->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </html>
