@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .body{
     background-color: #fbf7f3;
 }
@@ -14,10 +15,29 @@
     height:15vh;
 }
 .brandImagePicture{
+=======
+body{background-color: #FBF7F3 !important;}
+
+.body {
+    background-color: #fbf7f3;
+}
+
+.navbar {
+    margin-bottom: 2vh;
+}
+
+.brandImageSection {
+    background-color: bisque;
+    height: 15vh;
+}
+
+.brandImagePicture {
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
     width: 100%;
     height: 15vh;
     object-fit: fill;
 }
+<<<<<<< HEAD
 .userProfile{
     display: flex;
     width: 100%;
@@ -35,10 +55,37 @@
 }
 
 .userImageContainer{
+=======
+
+.userProfile {
+    display: flex;
+    width: 100%;
+    margin: auto;
+
+}
+
+.entrepreneurDescription {
+    height: inherit;
+    background-color: #fbf7f3;
+    width: 40%;
+    text-align: center;
+    padding: 2vh;
+    padding-bottom: 2vh;
+}
+
+.user{
+    color: #304a65;
+    font-family: 'Comfortaa', cursive;
+    font-size: large;
+}
+
+.userImageContainer {
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
     height: auto;
     width: 100%;
     max-height: 35vh;
 }
+<<<<<<< HEAD
 .userImage{
     max-width:100%;
     max-height:inherit;
@@ -106,12 +153,97 @@
 }
 
 .productsPosted{
+=======
+
+
+.user {
+    max-height: 3.5vh;
+}
+
+.starsSectionContainer {
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.starsSection {
+    width: 100%;
+    background-color: #304a65;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newPostSection {
+    width: 60%;
+    height: 10%;
+}
+
+.fa-star,
+.fa-heart,
+.fa-thumbs-down,
+.fa-comment {
+    color: #fbf7f3;
+
+}
+
+
+.starSelected {
+    color: yellow;
+}
+
+.star button {
+    border: none;
+    background-color: #304a65;
+    border-radius: 20px;
+}
+
+.brandDescription {
+    height: inherit;
+    background-color: #fbf7f3;
+    width: 60%;
+    padding: 2vh 0 0 0
+}
+
+.brandTextDescription {
+    word-wrap: break-word;
+    overflow: auto;
+    /*border: 5px black solid;*/
+    padding: 1rem;
+    background-color: #d7d6d8;
+    text-align: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.newPostSection {
+    min-height: 20%;
+    background-color: #fbf7f3;
+    text-align: center;
+    margin: 2vh;
+
+}
+
+.newPostButton {
+    background-color: #a56072;
+}
+
+.newPostButton:hover{
+    background-color: #304a65;
+}
+
+
+
+.productsPosted {
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
     background-color: #fbf7f3;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     height: auto;
     width: auto;
+<<<<<<< HEAD
 }
 
 .soloProduct{
@@ -157,12 +289,69 @@
 }
 
 .reactionButton button{
+=======
+    margin-bottom: 2rem;
+}
+
+.soloProduct {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+}
+
+.actionsContainer {
+    display: flex;
+    height: 5%;
+    margin-bottom: 2rem;
+}
+
+.imageNreactions {
+    background-color: #f1dfd1;
+}
+
+.imageContainer {
+    width: 100%;
+    height: 85%;
+    max-height: 85%;
+    margin: auto;
+    padding: 1vh;
+}
+
+.productImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.reactionsContainer {
+    display: flex;
+    text-align: center;
+    background-color: #a56072;
+    border-radius: 0% 0% 20px 20px;
+    max-height: 15%;
+}
+
+.reactionButton {
+    background-color: #a56072;
+    border: none;
+    margin: 1vh;
+    width: 32%;
+}
+
+.reactionButton :hover {
+    background-color: #304a65;
+    border-radius: 50%;
+}
+
+.reactionButton button {
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
     background-color: #a56072;
     border: none;
     padding: 0;
     margin: 0%;
 }
 
+<<<<<<< HEAD
 .reactionLogo{
     height: 2vh;
     width:2vw;
@@ -184,10 +373,40 @@
 .productDescription{
     margin-top: .5rem;
     background-color: #c0c9d7;
+=======
+
+.reactionLogo {
+    height: 2vh;
+    width: 2vw;
+}
+
+#like:hover {
+    color: red;
+    width: 2rem;
+    height: auto;
+}
+
+#dislike:hover {
+    color: gray;
+    width: 2rem;
+    height: auto;
+}
+
+#comment:hover {
+    color: green;
+    width: 2rem;
+    height: auto;
+}
+
+.productDescription {
+    margin-top: .5rem;
+    background-color: #d7d6d8;
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
     padding: 1rem;
     min-width: 10rem;
 }
 
+<<<<<<< HEAD
 .border{
     border-radius: 20px;
 }
@@ -212,29 +431,186 @@
     }
     .imageNreactions{
         padding:0;
+=======
+footer {
+    background-color: #304a65;
+}
+
+.border {
+    border-radius: 20px;
+}
+
+.fontText {
+    font-family: 'Quicksand', sans-serif;
+    color: #304a65;
+}
+
+.fontTextTitle {
+    font-family: 'Comfortaa', cursive;
+    color: #fbf7f3;
+
+}
+
+/*Navbar*/
+nav {
+    background-color: #304a65;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fbf7f3;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fbf7f3;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #e1c4b4;
+    opacity: 0.75;
+}
+
+.btn-secondary {
+    color: #fbf7f3;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-secondary:hover {
+    background-color: #97a9c1;
+}
+
+.btn-secondary:focus {
+    background-color: #97a9c1;
+    outline: none;
+    border-color: transparent;
+}
+
+
+/*MediaQueries*/
+@media screen and (max-width:420px) {
+
+    .brandImageSection {
+        height: 10vh;
+    }
+
+    .brandImagePicture {
+        width: 100%;
+        height: inherit;
+    }
+
+    .userProfile {
+        height: 29vh;
+        padding: 0;
+    }
+
+    .entrepreneurDescription,
+    .brandDescription {
+        margin: 0;
+        padding: .5rem .8rem 0 0;
+        height: inherit;
+        width: 40%;
+    }
+
+    .brandDescription {
+        width: 60%;
+    }
+
+    .userImageContainer {
+        height: 85%;
+    }
+
+    .userImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border: 1px black;
+    }
+
+    .user {
+        height: 15%;
+        font-size: small;
+    }
+
+    .actionsContainer {
+        height: 5%;
+        margin-bottom: 1rem;
+    }
+
+    .starsSection {
+        width: 100%;
+        height: 10%;
+        margin: 0;
+    }
+
+    .newPostSection {
+        width: 60%;
+        margin: 0;
+    }
+
+    .star {
+        font-size: small;
+        display: block;
+        height: 100%;
+    }
+
+    .productDescription {
+        display: none;
+    }
+
+    .brandTextDescription {
+        height: 85%;
+        padding: 0.5rem;
+        font-size: x-small;
+    }
+
+    .soloProduct {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .imageNreactions {
+        padding: 0;
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
         margin: 0;
         border-radius: 0;
     }
 
+<<<<<<< HEAD
     .imageContainer{
         padding:0;
+=======
+    .imageContainer {
+        padding: 0;
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
         margin: 0;
         border-radius: 0;
         max-width: 100%;
         max-height: 100%;
     }
 
+<<<<<<< HEAD
     .productImage{       
         border-radius: 0;
     }
 
     .reactionsContainer{
         padding:0;
+=======
+    .productImage {
+        border-radius: 0;
+    }
+
+    .reactionsContainer {
+        padding: 0;
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
         margin: 0;
         border-radius: 0;
         max-height: 7vh;
     }
 
+<<<<<<< HEAD
     .brandImageSection{
         max-height: 10vh;
     }
@@ -253,10 +629,22 @@
 
 
     .reactionButton button{
+=======
+    .brandImageSection {
+        max-height: 10vh;
+    }
+
+    .reactionButton {
+        margin: 0;
+    }
+
+    .reactionButton button {
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
         height: 4vh;
         width: 4vw;
     }
 
+<<<<<<< HEAD
     
     
 
@@ -264,3 +652,160 @@
 
 
 }
+=======
+    .productName {
+        display: block;
+    }
+
+    .newPostSection {
+        height: 10%;
+        width: 60%;
+        font-size: small;
+        display: block;
+    }
+
+
+}
+
+@media screen and (min-width:420px) {
+
+    .userProfile {
+        height: 38vh;
+    }
+
+    .entrepreneurDescription,
+    .brandDescription {
+        height: 38vh;
+        padding-bottom: 0;
+    }
+
+    .userImage {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        border: 1px black;
+    }
+
+    .soloProduct {
+        margin: 0;
+        padding: 0;
+    }
+
+    .productDescription {
+        display: none;
+    }
+
+    .newPostSection {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:576px) {
+
+    .userProfile {
+        height: 40vh;
+    }
+
+    .entrepreneurDescription,
+    .brandDescription {
+        height: inherit;
+        padding-bottom: 0;
+    }
+
+    .userImageContainer {
+        height: 85%;
+    }
+
+    .user {
+        height: 15%
+    }
+
+    .userImage {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        object-fit: contain;
+        border: 1px black;
+    }
+
+    .soloProduct {
+        margin: 0;
+        padding: 0;
+    }
+
+    .productDescription {
+        display: none;
+    }
+
+    .newPostSection {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:768px) {
+
+
+    .productDescription {
+        display: block;
+        height: 7.5rem;
+        overflow: hidden;
+    }
+
+    .soloProduct {
+        margin: 0 1rem 1rem 0;
+    }
+
+    .starsSection {
+        width: 70%;
+    }
+
+    /* ipad mini */
+}
+
+@media screen and (min-width:992px) {
+    .productsPosted {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+}
+
+@media screen and (min-width:1200px) {}
+
+@media screen and (min-width:1400px) {}
+
+/*CSS Footer*/
+#primera,
+#segunda,
+#tercera {
+    height: 1rem;
+    width: 1rem;
+    vertical-align: middle;
+}
+
+footer .border {
+    background-color: #304a65d7;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer h3 {
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: justify;
+    font-family: "Quicksand", sans-serif;
+    font-size: 0.9 rem;
+    padding-top: 1rem;
+}
+
+footer .col {
+    padding-left: 3rem;
+}
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281

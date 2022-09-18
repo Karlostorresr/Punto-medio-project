@@ -5,24 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile </title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Quicksand:wght@600&display=swap"
+        rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/e265d776dd.js" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="/CSS/usersProfile.css">
+    <link rel="stylesheet" href="/CSS/FollowersList.css">
 
-
+    <title>Followers&Following</title>
 </head>
 
-<body class="body">
-
-    <!-- Navbar -->
+<body>
     <nav class="navbar navbar-expand-lg navbar-light navbar sticky-top">
         <!-- Container wrapper -->
         <div class="container-fluid">
@@ -57,98 +53,64 @@
         </div>
     </nav>
 
+    <div class="container col-12 col-md-6 justify-content-center">
 
 
-    <div class="container-lg">
+        <div class="followContainer">
+            <div class="follow">
+                <span>
+                    <h4> 302</h4>
+                </span>
+                <span>
+                    <h4> Following</h4>
+                </span>
+            </div>
 
-        <div class="brandImageSection" id="brandPhotoContainer">
+            <div class="follow ">
+                <span>
+                    <h4> 102</h4>
+                </span>
+                <span>
+                    <h4> Followers</h4>
+                </span>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="list-group" id="followersContainer">
+
+            <button type="button" class="list-group-item list-group-item-action">
+                <div class="col-md-12 OwnerPost">
+
+                    <div class="avatarContainer" >
+                        <img class="smallAvatar" src="/Multimedia/Fernanda.png">
+                    </div>
+
+                    <div class="userName" >
+                        <a class="anchor"href=" #">
+                        <h3 claas="anchor">Fernanda Martinez</h3>
+                        </a>
+
+                    </div>
+
+                </div>
+            </button>
+
             
-        </div>
 
-        <div class="userProfile">
-            <div class="entrepreneurDescription">
-                <div class="userImageContainer" id="userImageContainer">
-                    
-                </div>
-                <div class="user" id="userNameContainer">
-                    
-                </div>
-            </div>
-
-
-            <div class="brandDescription" id="brandDescription">
-                
-            </div>
-        </div>
-
-        <div class="actionsContainer">
-            <div class="starsSectionContainer">
-                <div class="starsSection border">
-                    <div class="star">
-                        <button ><i class="fa-regular fa-star" id="Star-1"></i></button>
-                    </div>
-                    <div class="star">
-                        <button ><i class="fa-regular fa-star" id="Star-2"></i></button>
-                    </div>
-                    <div class="star">
-                        <button  ><i class="fa-regular fa-star" id="Star-3"></i></button>
-                    </div>
-                    <div class="star">
-                        <button  ><i class="fa-regular fa-star" id="Star-4"></i></button>
-                    </div>
-                    <div class="star">
-                        <button ><i class="fa-regular fa-star" id="Star-5"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="newPostSection">
-                <button class="border newPostButton fontTextTitle">New post</button>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="productsPosted" id="productsPosted">
-
-            <div class="soloProduct">
-                <div class="imageNreactions border">
-                    <div class="imageContainer">
-                        <img class="productImage border" src="/Multimedia/IPrueba1.png">
-                    </div>
-
-                    <div class="reactionsContainer">
-                        <div class="reactionButton" id="likeButton">
-                            <button> <i class="fa-regular fa-heart fa-lg" id="like"></i>
-                            </button>
-                        </div>
-
-                        <div class="reactionButton" id="disLikeButton">
-                            <button><i class="fa-regular fa-thumbs-down fa-lg" id="dislike"></i></button>
-                        </div>
-
-                        <div class="reactionButton" id="commentButton">
-                            <button><i class="fa-regular fa-comment fa-lg" id="comment"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="productDescription border">
-                    <div class="fontText">
-                        <span class="productName"><b><u>Sombrero charro</u></b></span>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis tenetur rem culpa ex!
-                    </div>
-                </div>
-            </div>
+            
 
 
         </div>
+
+
+
     </div>
 
-
     <footer>
-        <div>
+        <div class="border">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col">
@@ -181,11 +143,11 @@
         </div>
     </footer>
 
-</body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-<script src="/JS/usersProfile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/JS/FollowersList.js"></script>
+</body>
 
 </html>
