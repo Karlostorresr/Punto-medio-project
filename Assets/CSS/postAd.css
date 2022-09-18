@@ -23,6 +23,22 @@ nav {
   opacity: 0.75;
 }
 
+.btn-secondary {
+  color: #fbf7f3;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #97a9c1;
+}
+
+.btn-secondary:focus {
+  background-color: #97a9c1;
+  outline: none;
+  border-color: transparent;
+}
+
 h1 {
   font-family: "Comfortaa";
   color: #a56072;
