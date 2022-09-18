@@ -1,0 +1,118 @@
+<<<<<<< HEAD
+body{background-color: #fbf7f3;}
+=======
+body {
+    background-color: #FBF7F3 !important;
+}
+
+.bordeR {
+    border-radius: 20px;
+}
+
+
+.OwnerPost {
+    display: flex;
+    align-items: center;
+    min-height: 6vh;
+}
+
+.userName {
+    display: inline;
+    align-items: center;
+    
+}
+
+.userName h3 {
+    
+    margin: 0 0 0 0;
+    color: #304a65;
+}
+
+
+
+.anchor {
+    color: #d7d6d8;
+    text-decoration: none;
+
+}
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
+
+
+
+
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+
+.titleFont{
+    font-family: 'Comfortaa', cursive;
+=======
+.smallAvatar {
+    border-radius: 50%;
+    width: 3rem;
+    margin-right: 1.5rem;
+}
+
+.comment {
+    border-radius: 10px;
+    background-color: #d7d6d8;
+    margin: 1rem;
+    padding: .5rem;
+    max-width: 90vw;
+}
+
+.btn {
+    font-family: 'Quicksand', sans-serif;
+    color: #FBF7F3;
+    margin: .5rem;
+    background-color: #a56072;
+    border-radius: 20px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #304a65;
+    color: #FBF7F3;
+} 
+
+.title {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    color: #a56072;
+    font-family: 'Comfortaa', cursive;
+}
+
+.titleFont {
+    font-family: 'Comfortaa', cursive;
+    color: #304a65;
+
+}
+
+.structureText {
+    font-family: 'Quicksand', sans-serif;
+    color: #304a65;
+}
+
+.form-control{
+    background-color: #d7d6d8;
+}
+
+@media screen and (min-width: 750px) {
+    .col-md-8 {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        margin: auto;
+    }
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
+}
