@@ -1,0 +1,204 @@
+
+body{
+    background-color: #FBF7F3;
+}
+
+#contenedorlogo{
+width: 225px;
+height: 60px;
+padding-left: 57px;
+padding-top: 1%;
+}
+
+#primeracolumna{
+    
+    font-family: Quicksand;
+    color: #304A65;
+    font-weight: bold;
+    
+}
+#h2B{
+    padding-top: 70%;
+    padding-left: 10%;
+}
+#h2U{
+    padding-left: 10%;
+}
+
+#inicioS{
+    text-align: center;
+    color: #A56072;
+    font-weight: bold;
+    font-family: Comfortaa;
+    
+}
+
+#forminicio{
+    padding-top: 20%;
+    font-family: Quicksand;
+    color: #304A65;
+    font-size:20px;
+    font-weight: bold;
+}
+
+
+
+#botonenviar{
+background-color:#A56072; 
+border-color: #A56072;  
+color: #FBF7F3;
+padding: 2%;
+padding-left: 12%;
+padding-right: 12%;
+border-radius: 20px; 
+font-weight: bold;
+
+
+}
+
+#p1{
+padding-left: 15%;
+padding-top: 20%;
+color: #A56072;
+font-family: Quicksand;
+font-weight: bold;
+font-size: 20px;
+}
+
+#p3{
+    padding-left: 30%;
+    padding-top: 10%;
+    color: #304A65;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+#face{
+    padding-left: 25%;
+    padding-top: 10%;
+}
+
+#google{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+#checkbox{
+    padding-bottom: 5%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.main-head{
+    height: 150px;
+    background: #FBF7F3;
+   
+}
+
+.main {
+    padding: 0px 0px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 10%;
+        margin-top: 0%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 8%;
+        margin-left: 30%;
+        margin-right: 0%;
+        margin-bottom: 0%;
+        padding-right: 47%;
+        padding-left: 0%;
+        position: relative;
+        
+
+    }
+
+    
+}
+
+
+.login-main-text{
+    margin-top: 50%;
+    margin-left: -3%;
+    padding: 60px;
+    color: #fff;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Quicksand;
+    
+}
+
+.login-main-text h2{
+    font-weight: 400;
+   
+}
+
+.btn-black{
+    background-color: #A56072 !important;
+    color: #fff;
+    
+    
+    
+}
+img{
+    height: auto;
+    width: auto;
+    max-width: 180px;
+    max-height: 180px;
+    position:fixed;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.082);
+}
+.Inicio-de-Sesion {
+    width: 37px;
+    height: 45px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Quicksand;
+    font-size: 40px;
+    font-weight: 600;
+    color: #304a65;
+    margin-left: 37%;
+    
+  
+  }
+  
+  .form-group{
+    font-family: Quicksand;
+    font-weight: bold;
+    color: #304a65;
+  }*/
+  

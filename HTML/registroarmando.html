@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regístro</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+   <link rel="stylesheet" href="/assets/registrocss.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container-fluid">
+   <div class="row">
+      
+          <img src="/img/LogoDark.png" alt="" id="contenedorlogo">
+      
+  </div>
+   <div class="row">
+     <div class="col" id="primeracolumna">
+       <h2 id="h2B">Bienvenido</h2>
+      <h2 id="h2U">Únete a nosotros.</h2>
+     </div>
+     <div class="col">
+       
+      
+         <form id="forminicio" class="needs-validation" novalidate>
+           <div class="mb-3" id="nombre5">
+            <label for="exampleInputtext" class="form-label">Nombre</label>
+             <input type="text" class="form-control" id="grupo__nombre" aria-describedby="emailHelp" placeholder="Introduce tu nombre" name="nombre"required>
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback">No has ingresado tu nombre</div>
+             <label for="exampleInputtext" class="form-label">Apellido</label>
+             <input type="text" class="form-control" id="grupo__nombre" aria-describedby="emailHelp" placeholder="Introduce tu apellido" name="nombre"required>
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback">No has ingresado tu apellido</div>
+             <div id="emailHelp" class="form-text"></div>
+             <label for="exampleInputEmail1" class="form-label">Email</label>
+             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@outlook.com" name="email" required>
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback">Ingresa un email valido</div>
+             <div id="emailHelp" class="form-text"></div>
+           </div>
+           <div class="mb-3">
+             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduce tu contraseña" name="contraseña"required>
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback">No has ingresado tu contraseña</div>
+           </div>
+
+           <div class="mb-3" id="nombre5">
+            <label for="phone" class="form-label">Número de Teléfono</label>
+             <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Introduce tu numero" name="phone"required>
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback">No has ingresado tu numero</div>
+             <div id="emailHelp" class="form-text"></div>
+             <label for="start" class="form-label">Fecha de nacimiento</label>
+             <input type="date" class="form-control" id="start" name="start" 
+             min="1950-03" value="2022-05"required>
+             <div class="valid-feedback"></div>
+             <div class="invalid-feedback"></div>
+             <div id="emailHelp" class="form-text"></div>
+           </div>
+           <button type="submit" id="botonenviar" class="btn btn-primary">Registrame</button>
+           
+         </form>
+     </div>
+     <div class="col">
+      <h1 id="inicioS">Regístrate</h1>
+      <a href=""> <p id="p1">¿Ya tienes cuenta? ¡Inicia Sesión!</p></a>
+        </div>
+     </div>
+
+     
+   </div>
+ 
+
+
+ <script src="/js/registro.js"></script>
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+    
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+    
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()</script>
+
+
+
+    
+</body>
+</html>

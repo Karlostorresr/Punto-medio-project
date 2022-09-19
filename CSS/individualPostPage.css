@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+body{background-color: #fbf7f3;}
+=======
 body {
     background-color: #FBF7F3 !important;
 }
@@ -6,7 +9,9 @@ body {
     border-radius: 20px;
 }
 
-
+#imageContainer{
+    padding-top: 3vh;
+}
 .OwnerPost {
     display: flex;
     align-items: center;
@@ -25,17 +30,32 @@ body {
     color: #304a65;
 }
 
-
-
 .anchor {
     color: #d7d6d8;
     text-decoration: none;
-
 }
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
+
+<<<<<<< HEAD
+
+
+
+<<<<<<< HEAD
 
 
 
 
+
+
+
+
+
+
+.titleFont{
+    font-family: 'Comfortaa', cursive;
+=======
+=======
+>>>>>>> Karlosbranch
 .smallAvatar {
     border-radius: 50%;
     width: 3rem;
@@ -44,7 +64,7 @@ body {
 
 .comment {
     border-radius: 10px;
-    background-color: #d7d6d8;
+    background-color: #adbcd0;
     margin: 1rem;
     padding: .5rem;
     max-width: 90vw;
@@ -92,8 +112,18 @@ body {
     }
 }
 
+@media screen and (max-width: 760px) {
+    #imageContainer{
+    padding:2vh;}
+
+    .card-body{
+        padding-top: 0;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .card {
         margin: auto;
     }
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
 }
