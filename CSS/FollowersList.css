@@ -36,7 +36,7 @@ body{background-color: #FBF7F3 !important;}
 }
 
 .list-group button:hover{
-    background-color: #304a65;
+    background-color: #d7dfeb;
     
     
 }
@@ -47,6 +47,12 @@ body{background-color: #FBF7F3 !important;}
 }
 .userName{
     font-family: 'Quicksand', sans-serif;
+    
+}
+
+.anchor{
+    color:#304a65;
+    text-decoration: none;
 }
 
 .follow{
