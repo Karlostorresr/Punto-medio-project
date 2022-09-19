@@ -26,6 +26,7 @@ function createPostSection(postID){
     let tagA=document.createElement('a');
 
     let userNames=document.createElement('h3');
+    userNames.className='titleFont';
     userNames.innerText=postInformation["userFirstName"] + " " + postInformation["userLastName"];
     tagA.append(userNames);
     namesContainer=document.getElementById("userNameContainer");

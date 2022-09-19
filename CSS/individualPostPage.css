@@ -32,6 +32,11 @@ body {
     text-decoration: none;
 }
 
+
+.titleFont{
+    font-family: 'Comfortaa', cursive;
+}
+
 .smallAvatar {
     border-radius: 50%;
     width: 3rem;
@@ -59,6 +64,8 @@ body {
     background-color: #304a65;
     color: #FBF7F3;
 } 
+
+
 
 .title {
     margin-top: 3vh;
@@ -101,4 +108,5 @@ body {
     .card {
         margin: auto;
     }
+>>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
 }
