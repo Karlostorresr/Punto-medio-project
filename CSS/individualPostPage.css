@@ -6,7 +6,9 @@ body {
     border-radius: 20px;
 }
 
-
+#imageContainer{
+    padding-top: 3vh;
+}
 .OwnerPost {
     display: flex;
     align-items: center;
@@ -25,16 +27,10 @@ body {
     color: #304a65;
 }
 
-
-
 .anchor {
     color: #d7d6d8;
     text-decoration: none;
-
 }
-
-
-
 
 .smallAvatar {
     border-radius: 50%;
@@ -44,7 +40,7 @@ body {
 
 .comment {
     border-radius: 10px;
-    background-color: #d7d6d8;
+    background-color: #adbcd0;
     margin: 1rem;
     padding: .5rem;
     max-width: 90vw;
@@ -89,6 +85,15 @@ body {
 @media screen and (min-width: 750px) {
     .col-md-8 {
         margin: auto;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #imageContainer{
+    padding:2vh;}
+
+    .card-body{
+        padding-top: 0;
     }
 }
 
