@@ -3,7 +3,7 @@ const commentInputs = {
     submit: document.getElementById("sendComment"),
     comment: document.getElementById("commentDisplayInput"),
     btnVote: Array.from(document.getElementsByClassName("heartInput")),
-    voteNumber: Array.from(document.getElementsByClassName("upvoteNumber_"))
+    voteNumber: Array.from(document.getElementsByClassName("upvoteNumber_")),
 };
 
 //  Submit button and fields validation
