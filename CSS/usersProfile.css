@@ -526,6 +526,19 @@ nav {
 @media screen and (min-width:1400px) {}
 
 /*CSS Footer*/
+
+.btnFooter {
+    border: solid transparent;
+    border-radius: 1.25rem;
+    background-color: #a56072;
+    font-family: "Quicksand";
+    color: #fbf7f3;
+  }
+  
+  .btnFooter:hover {
+    background-color: #304a65;
+  }
+  
 #primera,
 #segunda,
 #tercera {
