@@ -35,12 +35,19 @@ padding-top: 1%;
 }
 
 #forminicio{
-    padding-bottom: 20%;
-    padding-top: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+    padding-top: 1.1rem;
+    height:auto;
+    border-radius: 1.25rem;
     font-family: Quicksand;
     color: #304A65;
     font-size:20px;
     font-weight: bold;
+    background-color: #97a9c1bd;
+    box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
 }
 
 
@@ -53,7 +60,7 @@ padding-top: 1%;
     font-weight: bold;
 
 }
-#botonenviar{
+/*#botonenviar{
 background-color:#A56072; 
 border-color: #A56072;  
 color: #FBF7F3;
@@ -64,7 +71,7 @@ border-radius: 20px;
 font-weight: bold;
 
 
-}
+}*/
 
 #p1{
     padding-left: 15%;
@@ -75,8 +82,35 @@ font-weight: bold;
     font-size: 20px;
     }
 
+
+    .form-control{
+        border-radius: 0.5rem;
+        background-color: #d7d6db;
+        }
     
 
+        .btn-primary {
+            background-color: #a56072;
+            border-radius: 1.25rem;
+            width: 8.5rem;
+            margin-top: 1rem;
+            border-color: #97a9c1bd;
+            font-size: 0.9rem;
+            font-weight: bold;
+            
+            
+            }
+
+            .btn-primary:hover {
+                background-color: #304a65;
+                border-color: #97a9c1bd;
+              }
+
+              .boton-publicar .btn-primary:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            
 /*estilos de validacion---------*/
 
 /*.forminicio__grupo-incorrecto{

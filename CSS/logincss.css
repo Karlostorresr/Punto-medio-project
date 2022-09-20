@@ -43,18 +43,28 @@ padding-top: 1%;
 
 
 
-#botonenviar{
-background-color:#A56072; 
-border-color: #A56072;  
-color: #FBF7F3;
-padding: 2%;
-padding-left: 12%;
-padding-right: 12%;
-border-radius: 20px; 
-font-weight: bold;
-
-
-}
+.btn-primary {
+    background-color: #a56072;
+    border-radius: 1.25rem;
+    width: 8.5rem;
+    margin-top: 1rem;
+    border-color: unset;
+    font-size: 0.9rem;
+    font-weight: bold;
+    
+    }
+    
+    .btn-primary:hover {
+        background-color: #304a65;
+        border-color: unset;
+        
+      }
+    
+     
+      .boton-publicar .btn-primary:focus {
+        outline: none;
+        box-shadow: none;
+      }
 
 #p1{
 padding-left: 15%;
@@ -88,7 +98,11 @@ font-size: 20px;
 }
 
 
-
+.form-control{
+    border-radius: 0.5rem;
+    background-color: #d7d6db;
+    }
+    
 
 
 
