@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-body{background-color: #fbf7f3;}
-=======
 body {
     background-color: #FBF7F3 !important;
 }
@@ -34,36 +31,7 @@ body {
     color: #d7d6d8;
     text-decoration: none;
 }
->>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
 
-<<<<<<< HEAD
-
-.titleFont{
-    font-family: 'Comfortaa', cursive;
-}
-
-=======
-<<<<<<< HEAD
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-.titleFont{
-    font-family: 'Comfortaa', cursive;
-=======
-=======
->>>>>>> Karlosbranch
->>>>>>> 5ea67c06c78aff6d04fc04c1d2f3e2821c129e7c
 .smallAvatar {
     border-radius: 50%;
     width: 3rem;
@@ -135,5 +103,5 @@ body {
     .card {
         margin: auto;
     }
->>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
+
 }
