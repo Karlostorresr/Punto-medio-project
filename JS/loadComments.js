@@ -1,7 +1,7 @@
 //FETCH PARA METODO GET
 
 let productos;
-// Aquí se debe cambiar el URL del servicio en el BackEnd
+//URL del servicio en el BackEnd
 const URL_MAIN = '../JS/fakerApi.json'; //URL a donde se hace la petición
 function addItems(div_Productos) { //div_Productos es el div donde se va a agregar los productos
 
@@ -60,17 +60,4 @@ window.addEventListener("load", function () { //cuando se cargue la página
 
 });
 
-// FETCH PARA HACER EL METODO POST
 
-// Este es nuestro cuerpo del POST
-
-
-/*
-const data =     
-    {nombre: "Sopa Maruchan de Res",
-    descripcion: "Sopa Maruchan sabor Res de 150 grs",
-    precio: 17.0,
-    url_Imagen: "sopaMaruchanRes.jpg"
-};
-
-*/
