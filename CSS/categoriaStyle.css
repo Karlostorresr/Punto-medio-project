@@ -13,6 +13,7 @@ nav {
 }
 
 .navbar-light .navbar-nav .nav-link {
+  font-size: .9rem;
   color: #fbf7f3;
 }
 
@@ -29,6 +30,7 @@ nav {
   color: #fbf7f3;
   background-color: transparent;
   border-color: transparent;
+  font-size: .9rem;
 }
 
 .btn-secondary:hover {
@@ -145,6 +147,18 @@ nav {
   
 }
 
+.btnFooter {
+  border: solid transparent;
+  border-radius: 1.25rem;
+  background-color: #a56072;
+  font-family: "Quicksand";
+  color: #fbf7f3;
+  display: flex;
+}
+
+.btnFooter:hover {
+  background-color: #304a65;
+}
 
 #primera, #segunda, #tercera{
   height: 1rem;

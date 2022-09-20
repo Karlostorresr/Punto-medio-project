@@ -22,46 +22,6 @@ function commentSubmit() {
 
 const btn = commentInputs.submit;
 
-function sendData(data) {
-    console.log('Sending data');
-
-    const XHR = new XMLHttpRequest();
-
-    const urlEncodedDataPairs = [];
-
-    // Turn the data object into an array of URL-encoded key/value pairs.
-    for (const [name, value] of Object.entries(data)) {
-        urlEncodedDataPairs.push(`${encodeURIComponent(name)}=${encodeURIComponent(value)}`);
-    }
-
-    // Combine the pairs into a single string and replace all %-encoded spaces to
-    // the '+' character; matches the behavior of browser form submissions.
-    const urlEncodedData = urlEncodedDataPairs.join('&').replace(/%20/g, '+');
-
-    // Define what happens on successful data submission
-    XHR.addEventListener('load', (event) => {
-        alert('Yeah! Data sent and response loaded.');
-    });
-
-    // Define what happens in case of error
-    XHR.addEventListener('error', (event) => {
-        alert('Oops! Something went wrong.');
-    });
-
-    // Set up our request
-    XHR.open('POST', 'https://example.com/cors.php');
-
-    // Add the required HTTP header for form data POST requests
-    XHR.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-    // Finally, send our data.
-    XHR.send(urlEncodedData);
-}
-
-btn.addEventListener('click', () => {
-    sendData({ test: 'ok' });
-})
-
 //* Check text validation 
 function enableButton() {
     let comment = commentInputs.comment.value.trim();
@@ -84,10 +44,17 @@ function disableSubmit() {
 //  Submit button and fields validation
 
 // Increase vote number
-function increaseVote() {
-    let valorLikes = 0;
-    valorLikes++;
-    commentInputs.voteNumber.innerHTML = valorLikes;
+function increaseVote(el, vote) {
+    let commentID = el.getAttribute("data-id")
+    let score = Array.from(document.getElementsByClassName("upvoteNumber_" + commentID))[0].innerText;
+    score = parseInt(score);
+    if (vote) {
+        score = score + 1;
+    }
+
+    if (score >= 0) {
+        document.getElementsByClassName("upvoteNumber_" + commentID)[0].innerText = score;
+    }
 }
 
 // Event listeners
@@ -95,10 +62,9 @@ function increaseVote() {
 function setEventListeners() {
     commentInputs.submit.addEventListener("click", commentSubmit);//Fires the function commentSubmit on click
     commentInputs.comment.addEventListener("keyup", enableButton);//Fires the event enableButton when the key is relesed
-    // for (let i = 0; i < commentInputs.btnVote.length; i++) {
-    //     commentInputs.btnVote[i].addEventListener("click", function () { increaseVote(this, true) });
-    // }
-    // commentInputs.btnVote.forEach.addEventListener("click", function () { increaseVote })
+    for (let i = 0; i < commentInputs.btnVote.length; i++) {
+        commentInputs.btnVote[i].addEventListener("click", function () { increaseVote(this, true) });
+    }
 }
 
 // Event listeners
