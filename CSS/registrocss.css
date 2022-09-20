@@ -84,9 +84,11 @@ font-weight: bold;
     }
 
 
-    .form-control{
-        border-radius: 0.5rem;
-        background-color: #d7d6db;
+    .form-control:focus{
+        border: solid #e1c4b4;
+        outline: none;
+        box-shadow: none;
+        border-radius: .5rem;
         }
     
 
