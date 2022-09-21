@@ -1,13 +1,14 @@
 //FETCH PARA METODO GET
 
-let productos;
-//URL del servicio en el BackEnd
-const URL_MAIN = '../JS/fakerApi.json'; //URL a donde se hace la petición
-function addItems(div_Productos) { //div_Productos es el div donde se va a agregar los productos
+let comments;
+
+const URL_Comments = '../JS/fakerApi.json'; //URL a donde se hace la petición
+const data = URL_Comments;
+function addItems(main_comments) { //donde se va a agregar los productos
 
 
 
-  fetch(URL_MAIN, {
+  fetch(URL_Comments, {
     method: 'get' //tipo de método
   }).then(function (response) {//response es la respuesta del servidor
     response.json().then(function (json) { //json es el objeto que se obtiene del servicio
@@ -15,7 +16,7 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
       console.log(json.length); //imprime el tamaño del json
       productos = json; //se guarda el json en la variable productos
       Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
-        div_Productos.innerHTML += `
+        main_comments.innerHTML += `
         <article class="main">
         <div class="row d-flex justify-content-center" id="tipsComment_">
           <div class="commentHead">
@@ -55,8 +56,8 @@ function addItems(div_Productos) { //div_Productos es el div donde se va a agreg
 }// addItems
 
 window.addEventListener("load", function () { //cuando se cargue la página
-  let div = document.getElementById("main_comments"); //div donde se va a agregar los productos
-  addItems(div); //se llama a la función addItems
+  let main = document.getElementById("main_comments"); //div donde se va a agregar los productos
+  addItems(main); //se llama a la función addItems
 
 });
 
