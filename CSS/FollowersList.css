@@ -36,7 +36,7 @@ body{background-color: #FBF7F3 !important;}
 }
 
 .list-group button:hover{
-    background-color: #304a65;
+    background-color: #d7dfeb;
     
     
 }
@@ -47,6 +47,12 @@ body{background-color: #FBF7F3 !important;}
 }
 .userName{
     font-family: 'Quicksand', sans-serif;
+    
+}
+
+.anchor{
+    color:#304a65;
+    text-decoration: none;
 }
 
 .follow{
@@ -97,37 +103,51 @@ nav {
 
 /*FOOTER*/
 /*CSS Footer*/
-#primera,
-#segunda,
-#tercera {
+
+.btnFooter {
+    border: solid transparent;
+    border-radius: 1.25rem;
+    background-color: #a56072;
+    font-family: "Quicksand";
+    color: #fbf7f3;
+  }
+  
+  .btnFooter:hover {
+    background-color: #304a65;
+  }
+  
+  #primera,
+  #segunda,
+  #tercera {
     height: 1rem;
     width: 1rem;
     vertical-align: middle;
-}
-
-footer .border {
-    background-color: #304a65d7;
+  } /*Hace referencia a las imagenes del apartado 'Links de interes'*/
+  
+  footer .border {
+    background-color: #304a65d7; /*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
     display: flex;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-footer h3 {
+  }
+  
+  footer h3 {
     color: #ffffff;
     font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: 1rem;
     padding-top: 1rem;
-}
-
-footer p {
+  }
+  
+  footer p {
     color: #ffffff;
     text-align: justify;
     font-family: "Quicksand", sans-serif;
     font-size: 0.9 rem;
     padding-top: 1rem;
-}
-
-footer .col {
+  }
+  
+  footer .col {
     padding-left: 3rem;
-}
+  }
+  

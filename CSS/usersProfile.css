@@ -123,6 +123,7 @@ body{background-color: #FBF7F3 !important;}
 
 .newPostButton {
     background-color: #a56072;
+    width: 8.5rem;
 }
 
 .newPostButton:hover{
@@ -307,6 +308,7 @@ nav {
         padding: .5rem .8rem 0 0;
         height: inherit;
         width: 40%;
+        background-color: #97a9c1;
     }
 
     .brandDescription {
@@ -526,6 +528,19 @@ nav {
 @media screen and (min-width:1400px) {}
 
 /*CSS Footer*/
+
+.btnFooter {
+    border: solid transparent;
+    border-radius: 1.25rem;
+    background-color: #a56072;
+    font-family: "Quicksand";
+    color: #fbf7f3;
+  }
+  
+  .btnFooter:hover {
+    background-color: #304a65;
+  }
+  
 #primera,
 #segunda,
 #tercera {

@@ -1,0 +1,180 @@
+body {
+  background-color: #fbf7f3;
+  color: #304a65;
+  font-family: "Quicksand";
+  font-size: 0.9rem;
+}
+
+nav {
+  background-color: #304a65;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fbf7f3;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fbf7f3;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #e1c4b4;
+  opacity: 0.75;
+}
+
+.btn-secondary {
+  color: #fbf7f3;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: #97a9c1;
+}
+
+.btn-secondary:focus {
+  background-color: #97a9c1;
+  outline: none;
+  border-color: transparent;
+}
+
+h1 {
+  font-family: "Comfortaa";
+  color: #a56072;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.form-control,
+.form-select {
+  background-color: #d7d6d8;
+  border-radius: 1.25rem;
+  box-shadow: 0.06rem 0.05rem 0.3rem #5f5d5d;
+}
+
+.btn-primary {
+  background-color: #a56072;
+  border-radius: 1.25rem;
+  width: 10rem;
+  margin-top: 1rem;
+  border-color: unset;
+  font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+  background-color: #304a65;
+  border-color: unset;
+}
+
+.post-image {
+  position: relative;
+  width: 9.875rem;
+  height: 9.875rem;
+  margin: 0.75rem auto;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0.06rem 0.05rem 0.3rem #5f5d5d;
+}
+
+.post-image .img-preview {
+  width: 100%;
+  height: 100%;
+  background-color: #d7d6db;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.post-image .img-input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 9.875rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.post-image .img-input-label:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.post-image .img-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.post-image .img-clear {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.4rem;
+  display: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  user-select: none;
+}
+
+.btnFooter {
+  border: solid transparent;
+  border-radius: 1.25rem;
+  background-color: #a56072;
+  font-family: "Quicksand";
+  color: #fbf7f3;
+}
+
+.btnFooter:hover {
+  background-color: #304a65;
+}
+
+#primera,
+#segunda,
+#tercera {
+  height: 1rem;
+  width: 1rem;
+  vertical-align: middle;
+} /*Hace referencia a las imagenes del apartado 'Links de interes'*/
+
+footer .border {
+  background-color: #304a65d7; /*Es el color azul mas fuerte de la pagina, solo con un poco de transparencia*/
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+footer h3 {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+footer p {
+  color: #ffffff;
+  text-align: justify;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9 rem;
+  padding-top: 1rem;
+}
+
+footer .col {
+  padding-left: 3rem;
+}
