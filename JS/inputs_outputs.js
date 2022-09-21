@@ -2,8 +2,7 @@
 const commentInputs = {
     submit: document.getElementById("sendComment"),
     comment: document.getElementById("commentDisplayInput"),
-    btnVote: Array.from(document.getElementsByClassName("heartInput")),
-    voteNumber: Array.from(document.getElementsByClassName("upvoteNumber_")),
+    btnVote: document.getElementsByClassName("heartInput")
 };
 
 //  Submit button and fields validation
@@ -23,19 +22,19 @@ function commentSubmit() {
 }
 
 const postComment = () => {
-fetch(URL_Comments, { //URL del servicio a donde se hara el POST
-    method: 'POST', // or 'PUT' 
-    headers: { // se agrega el header
-      'Content-Type': 'application/json', //tipo de contenido
+fetch(URL_Comments, { 
+    method: 'POST', 
+    headers: { 
+      'Content-Type': 'application/json', 
     },
-    body: JSON.stringify(data), //se agrega el cuerpo del POST
+    body: JSON.stringify(data), 
   })
-  .then(response => response.json()) //se obtiene la respuesta del servidor
-  .then(data => { //se obtiene el json
-    console.log('Success:', data); //se imprime el json
+  .then(response => response.json()) 
+  .then(data => { 
+    console.log('Success:', data); 
   })
-  .catch((error) => { //si hay un error
-    console.error('Error:', error); //se imprime el error
+  .catch((error) => { 
+    console.error('Error:', error); 
   });
 }
 
@@ -62,8 +61,9 @@ function disableSubmit() {
 
 // Increase vote number
 function increaseVote(el, vote) {
-    let commentID = el.getAttribute("data-id")
-    let score = Array.from(document.getElementsByClassName("upvoteNumber_" + commentID))[0].innerText;
+   let commentID = document.querySelector("data_id");
+   console.log(commentID)
+    let score = document.getElementsByClassName("upvoteNumber_" + commentID)[0];
     score = parseInt(score);
     if (vote) {
         score = score + 1;
@@ -79,9 +79,6 @@ function increaseVote(el, vote) {
 function setEventListeners() {
     commentInputs.submit.addEventListener("click", commentSubmit);//Fires the function commentSubmit on click
     commentInputs.comment.addEventListener("keyup", enableButton);//Fires the event enableButton when the key is relesed
-    for (let i = 0; i < commentInputs.btnVote.length; i++) {
-        commentInputs.btnVote[i].addEventListener("click", function () { increaseVote(this, true) });
-    }
 }
 
 // Event listeners

@@ -18,7 +18,7 @@ function addItems(main_comments) { //donde se va a agregar los productos
       Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
         main_comments.innerHTML += `
         <article class="main">
-        <div class="row d-flex justify-content-center" id="tipsComment_">
+        <div class="row d-flex justify-content-center" id="tipsComment_${p.uuid}">
           <div class="commentHead">
             <a target="_blank" href="#">
               <img class="img-fluid" alt="Profile Picture" src="${p.avatar}">
@@ -35,11 +35,11 @@ function addItems(main_comments) { //donde se va a agregar los productos
                 </div>
               </div>
               <div class="vote">
-                <button class="heartInput" data-id= "${p.uuid}">
+                <button class="heartInput" data_id="${p.uuid}" onclick="increaseVote()">
                   <i class="far fa-heart fa-lg" aria-hidden="true">
                   </i>
                 </button>
-                <span class="upvoteNumber_">${p.counter}</span>
+                <span class="upvoteNumber_${p.uuid}">${p.counter}</span>
               </div>
             </div>
           </div>
