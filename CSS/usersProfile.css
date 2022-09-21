@@ -123,6 +123,7 @@ body{background-color: #FBF7F3 !important;}
 
 .newPostButton {
     background-color: #a56072;
+    width: 8.5rem;
 }
 
 .newPostButton:hover{
@@ -307,6 +308,7 @@ nav {
         padding: .5rem .8rem 0 0;
         height: inherit;
         width: 40%;
+        background-color: #97a9c1;
     }
 
     .brandDescription {
