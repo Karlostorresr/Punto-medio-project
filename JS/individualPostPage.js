@@ -1,25 +1,25 @@
-///Publicacion///
-let postInformation = 
-    {   "img":"/Multimedia/Sombrero charro.png",
-        "avatar":"/Multimedia/Sombrero charro.png",
-        "userFirstName":"Karlos",
-        "userLastName":"Torres",
-        "date":"02-Sep-2022 09:10",
-        "productName":"Sombrero charro",
-        "productDescription":"Sombre charro unisex en diferentes tamaños para estas fiestas patrias"
-    };
+let URL_individualPost ='http://localhost:8080/PuntoMedio/Postnum/1'
 
-function createPostSection(postID){
+fetch(URL_individualPost,{
+    method: 'get'
+}) 
+
+    .then(function(response1){
+    response1.json().then(function(responseJson1){
+
+    console.log(responseJson1);
+        
+    
     let productImage= document.createElement('img');
     productImage.className='img-fluid  bordeR';
-    productImage.src=postInformation["img"];
-    productImage.alt=postInformation["productName"];
+    productImage.src=responseJson1["imagenURL"];
+    productImage.alt=responseJson1["productName"];
     let imgContainer=document.getElementById("imageContainer");
     imgContainer.appendChild(productImage);
 
     let avatarContainer=document.createElement('img');
     avatarContainer.className='smallAvatar';
-    avatarContainer.src=postInformation["avatar"];
+    avatarContainer.src=responseJson1["avatar"];/////
     let userAvatarContainer=document.getElementById("avatarContainer");
     userAvatarContainer.appendChild(avatarContainer);
 
@@ -27,7 +27,7 @@ function createPostSection(postID){
 
     let userNames=document.createElement('h3');
     userNames.className='titleFont';
-    userNames.innerText=postInformation["userFirstName"] + " " + postInformation["userLastName"];
+    userNames.innerText=responseJson1["userName"] + " " +responseJson1["userName"];
     tagA.append(userNames);
     namesContainer=document.getElementById("userNameContainer");
     namesContainer.appendChild(tagA);
@@ -37,40 +37,46 @@ function createPostSection(postID){
 
     let hour=document.createElement('small');
     hour.className='text-muted';
-    hour.innerText=postInformation["date"];
+    hour.innerText=responseJson1["date"]//;
     tagP.appendChild(hour);
     namesContainer.appendChild(tagP);
 
 
     let product =document.createElement('h5');
     product.className='card-title titleFont';
-    product.innerText=postInformation["productName"];
+    product.innerText=responseJson1["productName"];
     productContainer=document.getElementById("productNameContainer");
     productContainer.appendChild(product);
 
    let productDescription =document.createElement('p');
     productDescription.className='card-text structureText';
-    productDescription.innerText=postInformation["productDescription"];
+    productDescription.innerText=responseJson1["productDescription"];
     descriptionContainer=document.getElementById("productTextContainer");
     descriptionContainer.appendChild(productDescription);
-}
+    
 
-createPostSection(postInformation);
+    })
+})
 
 
-///Comentarios///
-let dummyCommentsArray = [
-    {
-        "date": "2022-09-04 14:35:00",
-        "userName": "Lucho Sama Montes",
-        "commentText": "Muffin sale a pasear con Brownie todos los dias"
-    },
-    {
-        "date": "2022-09-04 15:35:00",
-        "userName": "Guillermo Garibay",
-        "commentText": "Generetion me esta quitando las ganas de vivir "
-    }
-];
+
+
+let URL_Commentarios=`http://localhost:8080/post/comments/Postnum/1`
+fetch (URL_Commentarios,{
+    method:'get'
+}) .then (function (response){
+    response.json().then(function(ResponseJson){
+
+        console.log(ResponseJson);
+        
+            ResponseJson.forEach(element => {
+                let result = createCommentDiv(element);
+                document.getElementById("commentsContainer").appendChild(result);
+            });
+        
+        
+    })
+})
 
 
 function createCommentDiv(element) {
@@ -79,15 +85,15 @@ function createCommentDiv(element) {
 
     let userName=document.createElement('div');
     userName.className='userNameComment titleFont';
-    userName.innerText = element["userName"];
+    userName.innerText = element["usuario"];
 
     let commentDate=document.createElement('div');
     commentDate.className='date structureText';
-    commentDate.innerText=element["date"];
+    commentDate.innerText=element["fecha"];
 
     let commentText=document.createElement('div');
     commentText.className='commentText structureText';
-    commentText.innerText=element["commentText"];
+    commentText.innerText=element["textoComentario"];
 
     commentDivContainer.appendChild(userName);
     commentDivContainer.appendChild(commentDate);
@@ -96,14 +102,9 @@ function createCommentDiv(element) {
     return commentDivContainer;
 }
 
-function readDB(commentArray){
-    commentArray.forEach(element => {
-        let result = createCommentDiv(element);
-        document.getElementById("commentsContainer").appendChild(result);
-    });
-}
 
-readDB(dummyCommentsArray);
+
+
 
 
 

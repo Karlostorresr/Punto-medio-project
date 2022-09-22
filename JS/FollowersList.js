@@ -1,4 +1,4 @@
-let followersList = [
+/*let followersList = [
     {   "profileURL":" ",
         "avatar": "/Multimedia/Fernanda.png",
         "userName": "Fernanda Martinez"   
@@ -31,7 +31,10 @@ let followersList = [
         "avatar": "/Multimedia/Nena.png",
         "userName": "Alicia Castillo"
     }
-];
+];*/
+
+
+
 
 function createListElement(element) {
     let button=document.createElement('button');
@@ -57,7 +60,7 @@ function createListElement(element) {
 
     let userName=document.createElement('h3');
     userName.className='anchor';
-    userName.innerText=element["userName"];
+    userName.innerText=element["followerName"];
 
 
     tagAusuario.appendChild(userName);
@@ -71,13 +74,25 @@ function createListElement(element) {
 }
 
 function readDB(commentArray){
-    commentArray.forEach(element => {
-        let result = createListElement(element);
-        document.getElementById("followersContainer").appendChild(result);
-    });
+    let URL_followers = `http://localhost:8080/PuntoMedio/UsuarioFollowers/1`
+
+    fetch(URL_followers,{
+        method: 'get'
+    }) 
+    
+    .then(function (response){
+        response.json().then(function (responseJson){
+            console.log(responseJson);
+           responseJson.forEach(element => {
+            let result = createListElement(element);
+            document.getElementById("followersContainer").appendChild(result);
+            }); 
+        })
+    })
+    
 }
 
-readDB(followersList);
+readDB(1);
 
 
 /*
