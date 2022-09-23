@@ -1,100 +1,63 @@
-const initApp = async () => { //Start the app
-  // get json data from db
-  const contacts = await getDataFromDB();
-  // render data to page
-  renderContacts(contacts);
-};
+//FETCH PARA METODO GET
 
-document.addEventListener("DOMContentLoaded", initApp);
+let productos;
+//URL del servicio en el BackEnd
+const URL_MAIN = '../JS/fakerApi.json'; //URL a donde se hace la petición
+function addItems(div_Productos) { //div_Productos es el div donde se va a agregar los productos
 
-const getDataFromDB = async () => { //fetch data from the DB
-  const dataBase = await fetch( 
-    "https://fakerapi.it/api/v1/custom?_quantity=10&_locale=en_US&first_name=firstName&last_name=lastName&text=text&counter=counter"
-    // Fake API
-  );
-  const jsonData = await dataBase.json();
-  return jsonData.data;
-};
 
-const renderContacts = (contacts) => {
-  const main = document.querySelector("main");
-  const cardsArray = [];
 
-  contacts.forEach((contact) => {
-    const elemObj = createCardElements();
-    const card = createPersonCard(elemObj, contact);
-    cardsArray.push(card);
+  fetch(URL_MAIN, {
+    method: 'get' //tipo de método
+  }).then(function (response) {//response es la respuesta del servidor
+    response.json().then(function (json) { //json es el objeto que se obtiene del servicio
+      console.log(json); //imprime el json
+      console.log(json.length); //imprime el tamaño del json
+      productos = json; //se guarda el json en la variable productos
+      Array.from(json).forEach((p, index) => { //Toma el JSON, si es un arreglo haces el forEach. Si no lo es, mandas el error.
+        div_Productos.innerHTML += `
+        <article class="main">
+        <div class="row d-flex justify-content-center" id="tipsComment_">
+          <div class="commentHead">
+            <a target="_blank" href="#">
+              <img class="img-fluid" alt="Profile Picture" src="${p.avatar}">
+            </a>
+            <div class="card mb-3 displayedComment">
+              <div class="row g-0">
+                <div class="displayedCommentPic col-md-4">
+                  <h5 class="card-title">${p.first_name} ${p.last_name}</h5>
+                </div>
+                <div class="displayedCommentText col-md-8">
+                  <div class="card-body">
+                    <p class="card-text">${p.comment}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="vote">
+                <button class="heartInput" data-id= "${p.uuid}">
+                  <i class="far fa-heart fa-lg" aria-hidden="true">
+                  </i>
+                </button>
+                <span class="upvoteNumber_">${p.counter}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+                `;
+      }); // foreach para agregar los productos al div del HTML
+    });//then
+  }).catch(function (err) { //si hay un error
+    console.log(err); //imprime el error
   });
+  console.log(document.getElementById("main_comments")); //imprime el div donde se va a agregar los productos
 
-  cardsArray.forEach((card) => {
-    main.appendChild(card);
-  });
-};
+}// addItems
 
-const createCardElements = () => {
-  const article = document.createElement("article");
-  const tipsComment = document.createElement("div");
-  const commentHead = document.createElement("div");
-  const imgLink = document.createElement("a");
-  const img = document.createElement("img");
-  const card_mb = document.createElement("div");
-  const row_g_0 = document.createElement("div");
-  const col_md_4 = document.createElement("div");
-  const name = document.createElement("h5");
-  const displayedCommentText = document.createElement("div");
-  const cardBody = document.createElement("div");
-  const card_text = document.createElement("p");
-  const vote = document.createElement("div");
-  const heartInput = document.createElement("button");
-  const icon = document.createElement("i");
-  const upvoteNumber = document.createElement("span")
-  const commentDate = document.createElement("span")
-  return { article, tipsComment, commentHead, imgLink, img, card_mb, row_g_0, col_md_4, name, displayedCommentText, cardBody, card_text, vote, heartInput, icon, upvoteNumber, commentDate };
-};
+window.addEventListener("load", function () { //cuando se cargue la página
+  let div = document.getElementById("main_comments"); //div donde se va a agregar los productos
+  addItems(div); //se llama a la función addItems
 
-const createPersonCard = (elemObj, person) => {
-  const { article, tipsComment, commentHead, imgLink, img, card_mb, row_g_0, col_md_4, name, displayedCommentText, cardBody, card_text, vote, heartInput, icon, upvoteNumber, commentDate } = elemObj;
+});
 
-  article.className = "main"
-  tipsComment.className = "row d-flex justify-content-center";
-  tipsComment.setAttribute('id', 'tipsComment_');
-  commentHead.className = "commentHead";
-  imgLink.setAttribute('target', '_blank');
-  imgLink.setAttribute('href', '#');
-  img.className = "img-fluid";
-  img.setAttribute('alt', 'Profile Picture');
-  card_mb.className = "card mb-3 displayedComment";
-  row_g_0.className = "row g-0";
-  col_md_4.className = "displayedCommentPic col-md-4";
-  name.className = "card-title";
-  displayedCommentText.className = "displayedCommentText col-md-8";
-  cardBody.className = "card-body";
-  card_text.className = "card-text";
-  vote.className = "vote";
-  heartInput.className = "heartInput";
-  icon.className = "far fa-heart fa-lg";
-  upvoteNumber.className = "upvoteNumber_";
-  commentDate.className = "commentDate";
 
-  name.textContent = `${person.first_name} ${person.last_name}`;
-  card_text.textContent = `${person.text}`;
-  upvoteNumber.textContent = person.counter;
-  img.src = faker.random.image();
-
-  article.appendChild(tipsComment);
-  tipsComment.appendChild(commentHead);
-  commentHead.appendChild(imgLink);
-  imgLink.appendChild(img);
-  commentHead.appendChild(card_mb);
-  card_mb.appendChild(row_g_0);
-  row_g_0.appendChild(col_md_4);
-  col_md_4.appendChild(name);
-  row_g_0.appendChild(displayedCommentText);
-  displayedCommentText.appendChild(cardBody);
-  cardBody.appendChild(card_text);
-  card_mb.appendChild(vote);
-  vote.appendChild(heartInput);
-  heartInput.appendChild(icon);
-  vote.appendChild(upvoteNumber);
-  return article;
-};

@@ -7,12 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="/Assets/Images/puntero.png">
-  <link rel="stylesheet" href="/Assets/Style/StyleFinale.css">
+  <link rel="stylesheet" href="../CSS/StyleFinale.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap" rel="stylesheet">
   <title>Contáctanos - Punto Medio</title>
+  <link rel="icon" href="../Multimedia/favicon.ico">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         <!-- Navbar brand -->
         <div class="logo">
           <a class="navbar-brand" href="#">
-            <img id="Home" src="/Assets/Images/LogoLight.png" alt="">
+            <img id="Home" src="../Multimedia/LogoLight.png" alt="">
           </a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -33,17 +34,17 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Categorías</a>
-            <a class="nav-link" href="#">Publica</a>
-            <a class="nav-link" href="#">Tips de Venta</a>
+            <a class="nav-link active" aria-current="page" href="./categorias1.html">Categorías</a>
+            <a class="nav-link" href="./postAd.html">Publica</a>
+            <a class="nav-link" href="./tipsNegocio.html">Tips de Venta</a>
             <div class="dropdown hola-usuario">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
                 Hola, User
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Mi perfil</a></li>
-                <li><a class="dropdown-item" href="#">Seguidores</a></li>
+                <li><a class="dropdown-item" href="./usersProfile.html">Mi perfil</a></li>
+                <li><a class="dropdown-item" href="./FollowersList.html">Seguidores</a></li>
                 <li><a class="dropdown-item" href="#">Salir</a></li>
               </ul>
             </div>
@@ -87,36 +88,49 @@
       </div>
       <div class="col">
         <div class="text-end">
-          <a href="http://facebook.com" target="_blank"><img src="/Assets/Images/feibu.png" alt="Facebook"></a>
+          <a href="http://facebook.com" target="_blank"><img src="../Imagenes/feibu.png" alt="Facebook"></a>
         </div><br>
         <div class="text-end">
-          <a href="http://instagram.com" target="_blank"><img src="/Assets/Images/intagrai.png" alt="Instagram"></a>
+          <a href="http://instagram.com" target="_blank"><img src="../Imagenes/intagrai.png" alt="Instagram"></a>
         </div><br>
         <div class="text-end">
-          <a href="http://twitter.com" target="_blank"><img src="/Assets/Images/twitah.png" alt="Twitter"></a>
+          <a href="http://twitter.com" target="_blank"><img src="../Imagenes/twitah.png" alt="Twitter"></a>
         </div>
       </div>
     </div>
   </div><br>
-   <!--Redes sociales-->
-   <footer>
+  <!--Redes sociales-->
+  <footer>
     <div class="border" id="pie">
       <div class="container-fluid">
         <div class="row">
           <div class="col" id="nosotros">
             <h3>Sobre Nosotros</h3>
-            <p id="col1">¡Conóce un poco más acerca del equipo de trabajo detrás de la plataforma Punto Medio!</p>
+            <p>¡Conóce un poco más acerca del equipo de trabajo detrás de la plataforma Punto Medio!</p>
+            <a href="./aboutUs.html">
+              <button class="btnFooter">Sobre Nosotros</button>
+            </a>
           </div>
-          <div class="col" id="contactanos">
+          <div class="col">
             <h3>Contacto</h3>
-            <p id="col2">¿Necesitas ayuda? Contáctanos aquí.</p>
+            <p>¿Necesitas ayuda? Contáctanos aquí.</p>
+            <a href="./Finale.html">
+              <button class="btnFooter">Contacto</button>
+            </a>
           </div>
           <div class="col" id="interes">
             <h3>Links de interés</h3>
-            <a href="https://github.com/Karlostorresr/Punto-medio-project" target="_blank"><p id="git"><img src="/Assets/Images/kithub.png" alt="" id="cuarta"></a>
+            <a href="https://github.com/Karlostorresr/Punto-medio-project" target="_blank">
+              <p id="git"><img src="../Multimedia/kithub.png" alt="" id="cuarta">
+            </a>
             Repositorio en GitHub.</p>
-            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH_OR4qmvpUNQAAAYMpbLZwNt1Lu3_kX949kH2w0BvQIN3VTTdfH9CgLJ_UBgxM5PlsWP7vDFVIi6YS7VEII0BkaD-PM5o7EcKUlfwop0VTsczUKOTCYyJ-8t6ecO74x1q-77U=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F3244630839%3Ffbclid%3DIwAR3Cec5kLqF-NiJ981RLELJ036EbU11Inttkp-tuHQdRD-RXEddm6O55F2w" target="_blank"><p id="linkedin"><img src="/Assets/Images/linkdin.png" alt="" id="quinta"></a>Perfil empresarial.</p>
-            <a href="https://open.spotify.com/playlist/0LnnAZEuXNR16jaoDeQHtI" target="_blank"><p id="spotify"><img src="/Assets/Images/spoti.png" alt="" id="sexta"></a>Nuestra playlist.</p>
+            <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH_OR4qmvpUNQAAAYMpbLZwNt1Lu3_kX949kH2w0BvQIN3VTTdfH9CgLJ_UBgxM5PlsWP7vDFVIi6YS7VEII0BkaD-PM5o7EcKUlfwop0VTsczUKOTCYyJ-8t6ecO74x1q-77U=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F3244630839%3Ffbclid%3DIwAR3Cec5kLqF-NiJ981RLELJ036EbU11Inttkp-tuHQdRD-RXEddm6O55F2w"
+              target="_blank">
+              <p id="linkedin"><img src="../Multimedia/linkdin.png" alt="" id="quinta">
+            </a>Perfil empresarial.</p>
+            <a href="https://open.spotify.com/playlist/0LnnAZEuXNR16jaoDeQHtI" target="_blank">
+              <p id="spotify"><img src="../Multimedia/spoti.png" alt="" id="sexta">
+            </a>Nuestra playlist.</p>
           </div>
         </div>
       </div>
@@ -125,6 +139,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="/Assets/Script/ScriptFinale.js"></script>
+  <script src="../JS/ScriptFinale.js"></script>
 </body>
+
 </html>

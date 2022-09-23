@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-body{background-color: #fbf7f3;}
-=======
 body {
     background-color: #FBF7F3 !important;
 }
@@ -9,7 +6,9 @@ body {
     border-radius: 20px;
 }
 
-
+#imageContainer{
+    padding-top: 3vh;
+}
 .OwnerPost {
     display: flex;
     align-items: center;
@@ -28,32 +27,11 @@ body {
     color: #304a65;
 }
 
-
-
 .anchor {
     color: #d7d6d8;
     text-decoration: none;
-
 }
->>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
 
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-.titleFont{
-    font-family: 'Comfortaa', cursive;
-=======
 .smallAvatar {
     border-radius: 50%;
     width: 3rem;
@@ -62,7 +40,7 @@ body {
 
 .comment {
     border-radius: 10px;
-    background-color: #d7d6d8;
+    background-color: #adbcd0;
     margin: 1rem;
     padding: .5rem;
     max-width: 90vw;
@@ -75,12 +53,19 @@ body {
     background-color: #a56072;
     border-radius: 20px;
     border: none;
+    outline: none;
+    width:8.5rem;
 }
 
 .btn:hover {
     background-color: #304a65;
     color: #FBF7F3;
 } 
+
+.btn:focus{
+    outline: none;
+}
+
 
 .title {
     margin-top: 3vh;
@@ -95,13 +80,41 @@ body {
 
 }
 
+.buttonContainer{
+    display:flexbox;
+    text-align: center;
+    margin:auto;
+    
+}
+
+.btn, .btn-sm, button,.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border:solid #e1c4b4;
+    
+}
+.buttonContainer button:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border:solid #e1c4b4;
+
+}
+
+
 .structureText {
     font-family: 'Quicksand', sans-serif;
     color: #304a65;
 }
 
+.form-floating{
+    outline: none;
+}
 .form-control{
     background-color: #d7d6d8;
+    outline: none;
+    box-shadow: .03rem .4rem .9rem #5f5d5d;
 }
 
 @media screen and (min-width: 750px) {
@@ -110,9 +123,18 @@ body {
     }
 }
 
+@media screen and (max-width: 760px) {
+    #imageContainer{
+    padding:2vh;}
+
+    .card-body{
+        padding-top: 0;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .card {
         margin: auto;
     }
->>>>>>> 1af14c1442413fa6539be28db2dba465b7ddc281
+
 }
