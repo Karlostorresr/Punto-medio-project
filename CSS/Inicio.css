@@ -28,6 +28,72 @@ body{
       background-color: #304A65;
     }
 
+    .reactionsContainer{
+        display: flex;
+        text-align: center;
+        background-color: #a56072;
+        border-radius: 20px;
+        max-height: 15%;
+    }
+
+
+    .reactionButton {
+        background-color: #a56072;
+        border: none;
+        margin: 1vh;
+        width: 32%;
+    }
+    
+    .reactionButton :hover {
+        background-color: #304a65;
+        border-radius: 50%;
+    }
+    
+    .reactionButton button {
+        background-color: #a56072;
+        border: none;
+        padding: 0;
+        margin: 0%;
+    }
+
+    #like:hover {
+        color: red;
+        width: 2rem;
+        height: auto;
+    }
+    
+    #dislike:hover {
+        color: gray;
+        width: 2rem;
+        height: auto;
+    }
+    
+    #comment:hover {
+        color: green;
+        width: 2rem;
+        height: auto;
+    }
+
+    .btn-primary {
+        background-color: #a56072;
+        border-radius: 1.25rem;
+        width: 8.5rem;
+        margin-top: 1rem;
+        border-color: unset;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      
+      .btn-primary:hover {
+        background-color: #304a65;
+        border-color: unset;
+      }
+      
+      .boton-publicar .btn-primary:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
     /* .text-certification{
         visibility: hidden;
         opacity: 0;
@@ -75,7 +141,7 @@ body{
          padding:40px 25px;
     }
     .carousel .cnt-block:hover {
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+        box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
         border: 0;
     }
     .practice-area .inner h3{ 
@@ -152,7 +218,7 @@ body{
     }
 
 .profile-page .profile-header {
-    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
     border: 1px solid #f2f4f9;
 }
 
@@ -352,7 +418,7 @@ img {
 }
 
 .card {
-    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
     -webkit-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
     -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
     -ms-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
