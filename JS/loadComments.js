@@ -2,18 +2,18 @@
 
 let comments;
 
-const URL_Comments = '/JS/fakerAPI.json'; 
+const URL_Comments = 'http://localhost:8080/puntomedio/tipsventa/';
 function addItems(main_comments) {
 
 
   fetch(URL_Comments, {
-    method: 'get' 
+    method: 'get'
   }).then(function (response) {
-    response.json().then(function (json) { 
-      console.log(json); 
-      console.log(json.length); 
+    response.json().then(function (json) {
+      console.log(json);
+      console.log(json.length);
       comments = json;
-      Array.from(json).forEach((c, index) => { 
+      Array.from(json).forEach((c, index) => {
         main_comments.innerHTML += `
         <article class="main">
         <div class="row d-flex justify-content-center" id="tipsComment_${c.idComentario}">
@@ -58,4 +58,21 @@ window.addEventListener("load", function () {
   addItems(main);
 });
 
+const data = 'http://localhost:8080/puntomedio/tipsventa/';
 
+function postComment() {
+  fetch(URL_Comments, { //URL del servicio a donde se hara el POST
+    method: 'POST', // or 'PUT' 
+    headers: { // se agrega el header
+      'Content-Type': 'application/json', //tipo de contenido
+    },
+    body: JSON.stringify(data), //se agrega el cuerpo del POST
+  })
+    .then(response => response.json()) //se obtiene la respuesta del servidor
+    .then(data => { //se obtiene el json
+      console.log('Success:', data); //se imprime el json
+    })
+    .catch((error) => { //si hay un error
+      console.error('Error:', error); //se imprime el error
+    });
+}
