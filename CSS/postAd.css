@@ -49,22 +49,34 @@ h1 {
 .form-control,
 .form-select {
   background-color: #d7d6d8;
-  border-radius: 1.25rem;
+  border-radius: 0.5rem;
   box-shadow: 0.06rem 0.05rem 0.3rem #5f5d5d;
+}
+
+.area-texto .contenedor-texto:focus {
+  border: solid #e1c4b4;
+  outline: none;
+  box-shadow: none;
 }
 
 .btn-primary {
   background-color: #a56072;
   border-radius: 1.25rem;
-  width: 10rem;
+  width: 8.5rem;
   margin-top: 1rem;
   border-color: unset;
   font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .btn-primary:hover {
   background-color: #304a65;
   border-color: unset;
+}
+
+.boton-publicar .btn-primary:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .post-image {

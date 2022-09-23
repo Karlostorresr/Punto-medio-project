@@ -14,6 +14,7 @@ body {
     margin: auto;
 }
 
+<<<<<<< HEAD
 /* AQUI INICIA LA NAVBAR*/
 nav {
     background-color: #304a65;
@@ -53,6 +54,75 @@ nav {
 }
 
 /* .text-certification{
+=======
+    .reactionsContainer{
+        display: flex;
+        text-align: center;
+        background-color: #a56072;
+        border-radius: 20px;
+        max-height: 15%;
+    }
+
+
+    .reactionButton {
+        background-color: #a56072;
+        border: none;
+        margin: 1vh;
+        width: 32%;
+    }
+    
+    .reactionButton :hover {
+        background-color: #304a65;
+        border-radius: 50%;
+    }
+    
+    .reactionButton button {
+        background-color: #a56072;
+        border: none;
+        padding: 0;
+        margin: 0%;
+    }
+
+    #like:hover {
+        color: red;
+        width: 2rem;
+        height: auto;
+    }
+    
+    #dislike:hover {
+        color: gray;
+        width: 2rem;
+        height: auto;
+    }
+    
+    #comment:hover {
+        color: green;
+        width: 2rem;
+        height: auto;
+    }
+
+    .btn-primary {
+        background-color: #a56072;
+        border-radius: 1.25rem;
+        width: 8.5rem;
+        margin-top: 1rem;
+        border-color: unset;
+        font-size: 0.9rem;
+        font-weight: bold;
+      }
+      
+      .btn-primary:hover {
+        background-color: #304a65;
+        border-color: unset;
+      }
+      
+      .boton-publicar .btn-primary:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+    /* .text-certification{
+>>>>>>> 65f675a6ea86b0e990d43734297519254c8d612d
         visibility: hidden;
         opacity: 0;
         position: absolute;
@@ -65,6 +135,7 @@ nav {
         top: -130%;
     } */
 
+<<<<<<< HEAD
 .row.heading h2 {
     color: #fff;
     font-size: 52.52px;
@@ -200,9 +271,120 @@ ul {
 .carousel .cnt-block .follow-us li .fa:hover {
     color: #025a8e;
 }
+=======
+    .row.heading h2 {
+        color: #fff;
+        font-size: 52.52px;
+        line-height: 95px;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 40px;
+        padding-bottom: 20px;
+        text-transform: uppercase;
+    }
+    ul{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+    .heading.heading-icon {
+        display: block;
+    }
+    .padding-lg {
+        display: block;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .practice-area.padding-lg {
+        padding-bottom: 55px;
+        padding-top: 55px;
+    }
+    .practice-area .inner{ 
+         border:1px solid #999999; 
+         text-align:center; 
+         margin-bottom:28px; 
+         padding:40px 25px;
+    }
+    .carousel .cnt-block:hover {
+        box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
+        border: 0;
+    }
+    .practice-area .inner h3{ 
+        color:#3c3c3c; 
+        font-size:24px; 
+        font-weight:500;
+        font-family: "Quicksand";
+        padding: 10px 0;
+    }
+    .practice-area .inner p{ 
+        font-size:14px; 
+        line-height:22px; 
+        font-weight:400;
+    }
+    .practice-area .inner img{
+        display:inline-block;
+    }
+    
+    .carousel .cnt-block{ 
+       float:left; 
+       width:100%; 
+       background:#fff; 
+       padding:30px 20px; 
+       text-align:center; 
+       border:2px solid #d5d5d5;
+       margin: 0 0 28px;
+    }
+    .carousel .cnt-block figure{
+       width:148px; 
+       height:148px; 
+       border-radius:20%; 
+       display:inline-block;
+       margin-bottom: 15px;
+    }
+    .carousel .cnt-block img{ 
+       width:148px; 
+       height:148px; 
+       border-radius:20%; 
+    }
+    .carousel .cnt-block h3{ 
+       color:#2a2a2a; 
+       font-size:20px; 
+       font-weight:500; 
+       padding:6px 0;
+       text-transform: none;
+    }
+    .carousel .cnt-block h3 a{
+      text-decoration:none;
+        
+    }
+    .carousel .cnt-block h3 a:hover{
+        color:#337ab7;
+    }
+    .carousel .cnt-block p{ 
+       color:#2a2a2a; 
+       font-size:13px; 
+       line-height:20px; 
+       font-weight:400;
+    }
+    .carousel .cnt-block .follow-us{
+        margin:20px 0 0;
+    }
+    .carousel .cnt-block .follow-us li{ 
+        display:inline-block; 
+        width:auto; 
+        margin:0 5px;
+    }
+    .carousel .cnt-block .follow-us li .fa{ 
+       font-size:24px; 
+       color:#767676;
+    }
+    .carousel .cnt-block .follow-us li .fa:hover{ 
+       color:#025a8e;
+    }
+>>>>>>> 65f675a6ea86b0e990d43734297519254c8d612d
 
 .profile-page .profile-header {
-    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
     border: 1px solid #f2f4f9;
 }
 
@@ -407,7 +589,7 @@ img {
 }
 
 .card {
-    box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
+    box-shadow: .03rem 0.4rem 0.9rem #5f5d5d;
     -webkit-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
     -moz-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);
     -ms-box-shadow: 0 0 10px 0 rgba(183, 192, 206, 0.2);

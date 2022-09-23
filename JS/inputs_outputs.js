@@ -2,8 +2,7 @@
 const commentInputs = {
     submit: document.getElementById("sendComment"),
     comment: document.getElementById("commentDisplayInput"),
-    btnVote: Array.from(document.getElementsByClassName("heartInput")),
-    voteNumber: Array.from(document.getElementsByClassName("upvoteNumber_")),
+    btnVote: document.getElementsByClassName("heartInput"),
 };
 
 //  Submit button and fields validation
@@ -15,12 +14,12 @@ function commentSubmit() {
         let comments = {
             comment: commentInputs.comment.value.trim()
         };
+        postComment();
         disableSubmit();
     }
     commentInputs.comment.value = "";
-}
+};
 
-const btn = commentInputs.submit;
 
 //* Check text validation 
 function enableButton() {
@@ -33,39 +32,23 @@ function enableButton() {
     } else {
         disableSubmit();
     }
-}
+};
 
 //* Function to disable submit button
 function disableSubmit() {
     commentInputs.submit.classList.remove("commentInputEnabled");//Remove the class commentInputEnabled
     commentInputs.submit.disabled = true;//Then enables the submit button
     canSubmit = false;
-}
+};
 //  Submit button and fields validation
 
-// Increase vote number
-function increaseVote(el, vote) {
-    let commentID = el.getAttribute("data-id")
-    let score = Array.from(document.getElementsByClassName("upvoteNumber_" + commentID))[0].innerText;
-    score = parseInt(score);
-    if (vote) {
-        score = score + 1;
-    }
-
-    if (score >= 0) {
-        document.getElementsByClassName("upvoteNumber_" + commentID)[0].innerText = score;
-    }
-}
 
 // Event listeners
 //* Event listener for 
 function setEventListeners() {
     commentInputs.submit.addEventListener("click", commentSubmit);//Fires the function commentSubmit on click
     commentInputs.comment.addEventListener("keyup", enableButton);//Fires the event enableButton when the key is relesed
-    for (let i = 0; i < commentInputs.btnVote.length; i++) {
-        commentInputs.btnVote[i].addEventListener("click", function () { increaseVote(this, true) });
-    }
-}
+};
 
 // Event listeners
 
